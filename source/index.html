@@ -7,94 +7,138 @@
 </head>
 
 <body>
-  <header class="head">
-    <div class="head__wrap">
-      <nav class="head__nav">
-        <ul class="head__list">
-          <li class="head__clause-menu">
-            <a class="head__clause"><img class="head__logo logo" src="img/logoHeadRed.svg" width="75" height="22" alt="логотив pink"></a>
-            <a class="head__clause"><img class="head__logo-menu logo-menu" src="img/menured-burger-svg.svg" width="50" height="24" alt="иконка меню-бургер"></a>
+  <header>
+    <div class="wrap">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__clause-menu">
+            <button type="button" class="nav-list__button"><img class="head__logo logo" src="img/logoHeadRed.svg" width="75" height="22" alt="логотив pink">
+              <img class="head__logo-menu logo-menu" src="img/menured-burger-svg.svg" width="50" height="24" alt="иконка меню-бургер"></button>
           </li>
-          <li class="head__clause-menu"><a class="head__clause">главная</a></li>
-          <li class="head__clause-menu"><a href="photo.html" class="head__clause">фотографии</a></li>
-          <li class="head__clause-menu"><a href="form.html" class="head__clause">конкурс</a></li>
-          <li class="head__clause-menu"><a href="htmlacademy.ru" class="head__clause">html academy</a></li>
+          <li class="nav-list__clause-menu"><a href="index.html" class="clause-menu__clause">главная</a></li>
+          <li class="nav-list__clause-menu"><a class="clause-menu__clause">фотографии</a></li>
+          <li class="nav-list__clause-menu"><a href="form.html" class="clause-menu__clause">конкурс</a></li>
+          <li class="nav-list__clause-menu"><a href="htmlacademy.ru" class="clause-menu__clause">html academy</a></li>
         </ul>
       </nav>
-      <img class="head__image" src="img/icon/iphone-5-in-hand-png.png" width="498" height=" 314" alt="картинка с запущенным приложением">
-      <button type="submit" method="get" class="head__button buttons">Скачать приложение</button>
-      <div class="head__systems-list">
-        <a class="head__system"><img class="head__icon-system icon-system" src="img/applered-logo-svg.svg" width="47" height="56" alt="иконка apple"></a>
-        <a class="head__system"><img class="head__icon-system icon-system" src="img/icon/android-logo-svg.svg" width="43" height="47" alt="иконка android"></a>
-        <a class="head__system"><img class="head__icon-system icon-system" src="img/icon/microsoft-logo-svg.svg" width="44" height="41" alt="иконка microsoft"></a>
-      </div>
-      <p class="head__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </header>
+
   <main class="main">
-    <div class="main__wrap">
-      <section class="main__proposal">
-        <p class="main__parag-proposal">Устали от серости мегаполиса?</p>
-        <p class="main__parag-proposal">Нам есть, что вам предложить!</p>
-      </section>
-      <section class="main__descr">
-        <ul class="main__descr-list">
-          <li class="main__clause-descr">
-            <h3 class="main__title-descr">Поднимает настроение</h3>
-            <p class="main__parag-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="main__clause-descr">
-            <h3 class="main__title-descr">Меняет мир вокруг</h3>
-            <p class="main__parag-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="main__clause-descr">
-            <h3 class="main__title-descr">Заводит новых друзей</h3>
-            <p class="main__parag-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="mai__image-descr" src="img/icon/iphone-screen-smile.png" width="157" height="320" alt="Изображение телефона с запущенным приложением со смайлом">
+    <div class="wrap">
+
+      <section class="product-performance">
+        <img class="product-performance__image" src="img/icon/iphone-5-in-hand-png.png" width="498" height=" 314" alt="картинка с запущенным приложением">
+        <button type="submit" class="product-performance__download buttons">Скачать приложение</button>
+        <div class="product-performance__support">
+          <a class="product-performance__system"><img class="system__icon" src="img/applered-logo-svg.svg" width="47" height="56" alt="иконка apple"></a>
+          <a class="product-performance__system"><img class="system__icon" src="img/icon/android-logo-svg.svg" width="43" height="47" alt="иконка android"></a>
+          <a class="product-performance__system"><img class="system__icon" src="img/icon/microsoft-logo-svg.svg" width="44" height="41" alt="иконка microsoft"></a>
+        </div>
+        <p class="product-performance__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
-      <section class="main__comment">
-        <div class="main__slider-comment">
-          <h3 class="main__title-comment">Николай Петров</h3>
-          <pclass="main__parag-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <section class="proposal">
+        <p class="parag-proposal">Устали от серости мегаполиса?</p>
+        <p class="parag-proposal">Нам есть, что вам предложить!</p>
+      </section>
+
+      <section class="product-descr">
+        <ul class="product-descr__descr-list">
+          <li class="product-descr__clause-descr">
+            <h3 class="product-descr__title-descr">Поднимает настроение</h3>
+            <p class="product-descr__parag-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="product-descr__clause-descr">
+            <h3 class="product-descr__title-descr">Меняет мир вокруг</h3>
+            <p class="product-descr__parag-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="product-descr__clause-descr">
+            <h3 class="product-descr__title-descr">Заводит новых друзей</h3>
+            <p class="product-descr__parag-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="product-descr__image-descr" src="img/icon/iphone-screen-smile.png" width="157" height="320" alt="Изображение телефона с запущенным приложением со смайлом">
+      </section>
+
+      <section class="product-comment">
+        <div class="product-comment__slider-comment">
+          <h3 class="product-comment__title-comment">Николай Петров</h3>
+          <blockquote class="product-comment__quote">
+            <p class="product-comment__parag-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+        <div class="product-comment__slider-comment">
+          <h3 class="product-comment__title-comment">Николай Петров</h3>
+          <blockquote class="product-comment__quote">
+            <p class="product-comment__parag-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <div class="product-comment__slider-comment">
+            <h3 class="product-comment__title-comment">Николай Петров</h3>
+            <blockquote class="product-comment__quote">
+              <p class="product-comment__parag-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+      </section>
+
+      <section class="product-price">
+        <div class="product-price__slider-price">
+          <table class="product-price__price-list">
+            <tr>
+              <th class="product__price-descr">
+                <h3 class="product__title-price">Стандарт</h3>
+                <p class="product__parag-price">3,99 usd</p>
+              </th>
+              <th class="product__price-descr">
+                <h3 class="product__title-price">Стандарт</h3>
+                <p class="product__parag-price">3,99 usd</p>
+              </th>
+              <th class="product__price-descr">
+                <h3 class="product__title-price">Стандарт</h3>
+                <p class="product__parag-price">3,99 usd</p>
+              </th>
+            </tr>
+            <tr>
+              <th class="product__clause-price check">Розовый фильтр</th>
+              <th class="product__clause-price check">Розовый фильтр</th>
+              <th class="product__clause-price check">Розовый фильтр</th>
+            </tr>
+            <tr>
+              <th class="product__clause-price check">Смайлики</th>
+              <th class="product__clause-price check">Смайлики</th>
+              <th class="product__clause-price check">Смайлики</th>
+            </tr>
+            <tr>
+              <th class="product__clause-price not-check">Комментарии</th>
+              <th class="product__clause-price not-check">Комментарии</th>
+              <th class="product__clause-price not-check">Комментарии</th>
+            </tr>
+          </table>
         </div>
       </section>
-      <section class="main_price">
-        <div class="main_slider-price">
-          <ul class="main_price-list">
-            <li class="main__rice-descr">
-              <h3 class="main__title-price">Стандарт</h3>
-              <pclass="main__parag-price">3,99 usd</p>
-            </li>
-            <li class="main__clause-rice check">Розовый фильтр</li>
-            <li class="main__clause-rice check">Смайлики</li>
-            <li class="main__clause-rice not-check">Комментарии</li>
-          </ul>
+
+      <section class="communication">
+        <p class="communication__title">Остались вопросы?</p>
+        <p class="communication__title">Свяжитесь с нами!</p>
+
+        <div class="communic-number">
+          <p class="communic__title">Звоните:</p>
+          <a class="communic__number" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+
+        <div class="communic-mail">
+          <p class="communic__title">Пишите:</p>
+          <a class="communic__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+
+        <div class="communic-address">
+          <p class="communic__title">Приезжайте в гости:</p>
+          <address class="communic__address">ул. Большая Конюшенная, 19/8</address>
+          <img class="communic-address__map" src="img/icon/maps.jpg" width="320" height="645" alt="ул. Большая Конюшенная, 19/8">
         </div>
       </section>
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__wrap">
-      <section class="footer__communic">
-        <h3 class="footer__title">Остались вопросы?</h3>
-        <h3 class="footer__title">Свяжитесь с нами!</h3>
-        <div class="footer__communic-number">
-          <h3 class="footer__title-communic">Звоните:</h3>
-          <a class="footer__number" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="footer__communic-mail">
-          <h3 class="footer__title-communic">Пишите:</h3>
-          <a class="footer__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer__communic-address">
-          <h3 class="footer__title-communic">Приезжайте в гости:</h3>
-          <address class="footer__address">ул. Большая Конюшенная, 19/8</address>
-        </div>
-      </section>
-      <div>
   </footer>
 </body>
 

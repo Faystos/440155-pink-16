@@ -7,105 +7,149 @@
 </head>
 
 <body>
+
   <header>
-    <div class="head__wrap">
-      <nav class="head__nav">
-        <ul class="head__list">
-          <li class="head__clause-menu">
-            <a class="head__clause" href="index.html"><img class="head__logo logo" src="img/logoHeadRed.svg" width="75" height="22" alt="логотив pink"></a>
-            <a class="head__clause" href="#"><img class="head__logo-menu logo-menu" src="img/menured-burger-svg.svg" width="50" height="24" alt="иконка меню-бургер"></a>
+    <div class="wrap">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__clause-menu">
+            <button type="button" class="nav-list__button"><img class="head__logo logo" src="img/logoHeadRed.svg" width="75" height="22" alt="логотив pink">
+              <img class="head__logo-menu logo-menu" src="img/menured-burger-svg.svg" width="50" height="24" alt="иконка меню-бургер"></button>
           </li>
-          <li class="head__clause-menu"><a class="head__clause" href="index.html">главная</a></li>
-          <li class="head__clause-menu"><a class="head__clause">фотографии</a></li>
-          <li class="head__clause-menu"><a href="form.html" class="head__clause">конкурс</a></li>
-          <li class="head__clause-menu"><a href="htmlacademy.ru" class="head__clause">html academy</a></li>
+          <li class="nav-list__clause-menu"><a href="index.html" class="clause-menu__clause">главная</a></li>
+          <li class="nav-list__clause-menu"><a class="clause-menu__clause">фотографии</a></li>
+          <li class="nav-list__clause-menu"><a href="form.html" class="clause-menu__clause">конкурс</a></li>
+          <li class="nav-list__clause-menu"><a href="htmlacademy.ru" class="clause-menu__clause">html academy</a></li>
         </ul>
       </nav>
-      <h1 class="head__title">Фотографии пользователей</h1>
     </div>
   </header>
+
   <main class="main">
-    <div class="main__wrap">
-      <section class="main__descr-photo">
-        <p class="main__parag-photo">Взгляните на фотографии, которые выкладывают пользователи!</p>
-        <p class="main__parag-photo">Видите, как не хватает ваших?</p>
+    <div class="wrap">
+      <h1 class="user-photo">Фотографии пользователей</h1>
+
+      <section class="descr-photo">
+        <p class="descr-photo__parag-photo">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="descr-photo__parag-photo">Видите, как не хватает ваших?</p>
       </section>
     </div>
 
-    <section class="main__photo-albom">
-      <img class="main__ponorama" src="img/photo/panorama-mobile-jpg.jpg" width="320" height="137" alt="изображаение понорамы дня">
-      <a href="#" class="main__buttum-ponorama">ПАНОРАМА ДНЯ</a>
-      <div class="main__wrap">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Анна<span class="main__time">(5 минут назад)</span></h3>
-          <p class="main__parag-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 215</p>
+    <section class="albums">
+
+      <div class="albums-comment">
+        <img class="albums-comment__ponorama" src="img/photo/panorama-mobile-jpg.jpg" width="320" height="137" alt="изображаение понорамы дня">
+        <a href="#" class="albums-comment__buttum-ponorama">ПАНОРАМА ДНЯ</a>
+        <div class="wrap">
+          <h3 class="albums-comment__author-comment">Анна<time class="albums-comment__time">(5 минут назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 215</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-1-avto.jpg" width="280" height="180" alt="на фотографии изображаение белого автомобиля">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Левон<span class="main__time">(5 часов назад)</span></h3>
-          <p class="main__parag-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 356</p>
+      </div>
+
+      <div class="wrap">
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-1-avto.jpg" width="280" height="180" alt="на фотографии изображаение белого автомобиля">
+          <h3 class="albums-comment__author-comment">Левон<time class="albums-comment__time">(5 часов назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 356</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-2-drum.jpg" width="280" height="180" alt="на фотографии изображаение барабана">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Антон<span class="main__time">(12 часов назад)</span></h3>
-          <p class="main__parag-comment">Соседи будут рады!</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 666</p>
+
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-2-drum.jpg" width="280" height="180" alt="на фотографии изображаение барабана">
+          <h3 class="albums-comment__author-comment">Антон<time class="albums-comment__time">(12 часов назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Соседи будут рады!</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 666</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-3-windows.jpg" width="280" height="180" alt="на фотографии изображаение окон">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Борис<span class="main__time">(20 часов назад)</span></h3>
-          <p class="main__parag-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 215</p>
+
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-3-windows.jpg" width="280" height="180" alt="на фотографии изображаение окон">
+          <h3 class="albums-comment__author-comment">Борис<time class="albums-comment__time">(20 часов назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 215</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-4-bahcha.jpg" width="280" height="180" alt="на фотографии изображаение Бахчи">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Сергей<span class="main__time">(25 часов назад)</span></h3>
-          <p class="main__parag-comment">Самая кубанская в мире!</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 4</p>
+
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-4-bahcha.jpg" width="280" height="180" alt="на фотографии изображаение Бахчи">
+          <h3 class="albums-comment__author-comment">Сергей<span class="albums-comment__time">(25 часов назад)</span></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Самая кубанская в мире!</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 4</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-5-mount.jpg" width="280" height="180" alt="на фотографии изображаение гор">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Максим<span class="main__time">(40 часов назад)</span></h3>
-          <p class="main__parag-comment">Где снег-то?</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 150</p>
+
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-5-mount.jpg" width="280" height="180" alt="на фотографии изображаение гор">
+          <h3 class="albums-comment__author-comment">Максим<time class="albums-comment__time">(40 часов назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Где снег-то?</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 150</button>
         </div>
-        <img class="main__photo" src="img/photo/photo-6-avio.jpg" width="280" height="180" alt="на фотографии изображаение крыла самолета">
-        <div class="main__photo-comment">
-          <h3 class="main__title-comment">Надежда<span class="main__time">(45 часов назад)</span></h3>
-          <p class="main__parag-comment">Всем GM и взаимные лайки!</p>
-          <p class="main__like-comment"><img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">Нравится: 2560</p>
+
+
+        <div class="albums-comment">
+          <img class="albums-comment__photo" src="img/photo/photo-6-avio.jpg" width="280" height="180" alt="на фотографии изображаение крыла самолета">
+          <h3 class="albums-comment__author-comment">Надежда<time class="albums-comment__time">(45 часов назад)</time></h3>
+          <blockquote class="albums-comment__quote">
+            <p class="albums-comment__parag-comment">Всем GM и взаимные лайки!</p>
+          </blockquote>
+          <button type="button" class="albums-comment__like-comment">
+            <!--<img class="main__like" src="img/icon/icon-like-svg.svg" width="13" height="12" alt="мне нравится">-->Нравится: 2560</button>
         </div>
       </div>
     </section>
-    <div class="main__wrap">
-      <section class="main__descr-photo">
-        <p class="main__parag-photo">Затмите их всех!</p>
-        <p class="main__parag-photo">Выкладывайте все, что накопилось в телефоне!</p>
+
+    <div class="wrap">
+      <section class="promote">
+        <p class="promote__parag">Затмите их всех!</p>
+        <p class="promote__parag">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
-      <section class="main__your-photo-albom">
-        <img class="main__your-photo" src="img/photo/photo-7-your-photo.jpg" width="280" height="374" alt="тут расположено фото, которые вы хотите разместить">
+      <section class="photo-edit">
+        <img class="photo-edit__your-photo" src="img/photo/photo-7-your-photo.jpg" width="280" height="374" alt="тут расположено фото, которые вы хотите разместить">
         <div class="your-photo__setings">
-          <a class="main__seting"><img class="main__icon-seting" src="img/icon/set-crop-svg.svg" width="44" height="44" alt="иконка обрезать"></a>
-          <a class="main__seting"><img class="main__icon-seting" src="img/icon/set-fill-svg.svg" width="48" height="43" alt="иконка заливки"></a>
-          <a class="main__seting"><img class="main__icon-seting" src="img/icon/set-contrast-svg.svg" width="32" height="32" alt="иконка контраста"></a>
+          <button class="photo-edit__seting"><img class="photo-edit__icon-seting" src="img/icon/set-crop-svg.svg" width="44" height="44" alt="иконка обрезать"></button>
+          <button class="photo-edit__seting"><img class="photo-edit__icon-seting" src="img/icon/set-fill-svg.svg" width="48" height="43" alt="иконка заливки"></button>
+          <button class="photo-edit__seting"><img class="photo-edit__icon-seting" src="img/icon/set-contrast-svg.svg" width="32" height="32" alt="иконка контраста"></button>
         </div>
-        <button class="main__button-send" type="button" type="submit" method="post" name="send">Запостить</button>
-        <button class="main__button-cancel" type="button" name="cancel">Отмена</button>
+        <form class="photo-edit__load-photo" action="https://echo.htmlacademy.ru" method="post">
+          <input type="file" name="your-photo" accept="image/jpeg">
+          <button class="load-photo__button-send" type="submit" name="send">Запостить</button>
+          <button class="load-photo__button-cancel" type="reset" name="cancel">Отмена</button>
+        </form>
       </section>
     </div>
   </main>
-  <footer class="photo-footer">
-    <div class="footer__wrap">
-      <a class="photo-footer__logo" href="#"><img class="footer__logo" src="img/icon/logo-pink-footer.svg" width="147" height="40" alt="логотив pink"></a>
-      <div class="photo-footer__social">
-        <a class="footer__social" href="#"><img class="footer__icon-social" src="img/icon/twitter-svg.svg" width="18" height="14" alt="иконка twitter"></a>
-        <a class="footer__social" href="#"><img class="footer__icon-social" src="img/icon/facebook-svg.svg" width="9" height="18" alt="иконка facebook"></a>
-        <a class="footer__social" href="#"><img class="footer__icon-social" src="img/icon/youtube-svg.svg" width="15" height="13" alt="иконка youtube"></a>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a class="footer-logo" href="#"><img src="img/icon/logo-pink-footer.svg" width="147" height="40" alt="логотив pink"></a>
+      <div class="footer-social">
+        <a class="footer-social__icon-social" href="#"><img src="img/icon/twitter-svg.svg" width="18" height="14" alt="иконка twitter"></a>
+        <a class="footer-social__icon-social" href="#"><img src="img/icon/facebook-svg.svg" width="9" height="18" alt="иконка facebook"></a>
+        <a class="footer-social__icon-social" href="#"><img src="img/icon/youtube-svg.svg" width="15" height="13" alt="иконка youtube"></a>
       </div>
-      <a class="footer__develop" href="#">Разработано</a>
+      <a class="develop" href="#">Разработано <img src="img/icon/logo-htmlacademy.svg" width="27" height="34" alt="разработано htmlacademy"></a>
     </div>
   </footer>
 

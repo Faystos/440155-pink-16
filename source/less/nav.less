@@ -1,0 +1,45 @@
+@mobile-width: 320px;
+
+
+@media (min-width: @mobile-width) {
+  .nav {
+    background-color: #283645;
+    min-width: 320px;
+  }
+
+  .nav-list {
+
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__controls {
+    min-height: 69px;
+    box-shadow: 0px 1px 0 0 #000000;
+    padding: 15px 20px 5px 19px;
+  }
+
+  .nav-list__menu {
+    min-height: 63px;
+    box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    padding: 15px 5px 5px;
+  }
+
+  .nav-list__menu a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+}

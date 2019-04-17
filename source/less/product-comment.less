@@ -1,0 +1,32 @@
+@mobile-width: 320px;
+@media (min-width: @mobile-width) {
+  .product-comment__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-comment__slider:nth-of-type(2){
+    display: none;
+  }
+  .product-comment__slider:nth-of-type(3){
+    display: none;
+  }
+  .product-comment__title{
+    font-size: 18px;
+    font-weight:700;
+    line-height: 1.67;
+    font-style: normal;
+    margin: 0 0 23px 0;
+  }
+  .product-comment__parag {
+    display: block;
+    width: 280px;
+    font-size: 14px;
+    line-height: 2.14;
+    color: #283645;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}

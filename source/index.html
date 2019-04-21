@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Пинк: Главная</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -11,27 +12,28 @@
 
 <body>
   <header>
-    <div class="wrap">
       <nav class="nav">
+        <div class="nav__wrap">
         <div class="nav__controls">
           <a class="nav__home"><img class="nav__logo logo" src="img/icon/logoHead.svg" width="75" height="22" alt="логотив pink"></a>
-          <a class="nav__home"><img class="nav__logo tablet-logo" src="img/icon/logotype-white-tablet-svg.svg" width="75" height="22" alt="логотив pink"></a>
           <button type="button" class="nav__button"><img class="nav__logo-menu logo-menu" src="img/icon/menu-burger-svg.svg" width="50" height="24" alt="иконка меню-бургер"></button>
         </div>
         <ul class="nav-list">
           <li class="nav-list__menu"><a class="nav-list__clause">главная</a></li>
           <li class="nav-list__menu"><a href="photo.html" class="nav-list__clause">фотографии</a></li>
           <li class="nav-list__menu"><a href="form.html" class="nav-list__clause">конкурс</a></li>
-          <li class="nav-list__menu"><a href="htmlacademy.ru" class="nav-list__clause">html academy</a></li>
+          <li class="nav-list__menu"><a href="#" class="nav-list__clause">html academy</a></li>
         </ul>
+          </div>
       </nav>
-    </div>
+
   </header>
 
   <main class="main">
     <div class="wrap">
 
       <section class="product-performance">
+        <div class="product-performance__wrap">
         <div class="product-performance__image">
           <img src="img/icon/iphone-5-in-hand-png.png" width="498" height="314" alt="картинка с запущенным приложением">
         </div>
@@ -42,6 +44,7 @@
           <a class="product-performance__system"><img class="system__icon" src="img/icon/microsoft-logo-svg.svg" width="44" height="41" alt="иконка microsoft"></a>
         </div>
         <p class="product-performance__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <section class="proposal">
@@ -193,7 +196,7 @@
       </section>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--mobile-none">
     <div class="wrap">
       <a class="footer__logo"><img src="img/icon/logo-pink-footer.svg" width="147" height="40" alt="логотив pink"></a>
       <div class="footer__social">

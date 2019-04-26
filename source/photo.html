@@ -127,13 +127,16 @@
       </div>
     </section>
 
-    <div class="wrap">
-      <section class="promote">
+
+      <section class="promote promote__wrap">
         <p class="promote__parag">Затмите их всех!</p>
         <p class="promote__parag">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
+
+
       <section class="photo-edit">
+        <div class="photo-edit__wrap">
         <form class="photo-edit__load-photo" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" method="post">
           <img class="photo-edit__your-photo" src="img/photo/photo-7-your-photo.jpg" width="280" height="374" alt="тут расположено фото, которые вы хотите разместить">
           <div class="photo-edit__settings">
@@ -142,7 +145,21 @@
             <button class="photo-edit__setting"><img class="photo-edit__icon-setting" src="img/icon/icon-editor-contrast.svg" width="32" height="32" alt="иконка контраста"></button>
           </div>
 
-          <div class="photo-edit__controls">
+          <div class="photo-edit__controls photo-edit__crop">
+            <div class="photo-edit__scale">
+              <div class="photo-edit__bar"></div>
+            </div>
+            <div class="photo-edit__toggle"></div>
+          </div>
+
+          <div class="photo-edit__controls  photo-edit__casting">
+            <div class="photo-edit__scale">
+              <div class="photo-edit__bar"></div>
+            </div>
+            <div class="photo-edit__toggle"></div>
+          </div>
+
+          <div class="photo-edit__controls photo-edit__contrast">
             <div class="photo-edit__scale">
               <div class="photo-edit__bar"></div>
             </div>
@@ -153,8 +170,9 @@
           <button class="photo-edit__button-send" type="submit" name="send">Запостить</button>
           <button class="photo-edit__button-cancel" type="reset" name="cancel">Отмена</button>
         </form>
+        </div>
       </section>
-    </div>
+
   </main>
 
   <footer class="footer">

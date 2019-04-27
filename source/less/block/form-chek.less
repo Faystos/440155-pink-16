@@ -1,0 +1,84 @@
+.form-chek {
+  background-color: #f2f2f2;
+  margin: 0 0 41px 0;
+}
+.form-chek__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 40px 20px 5px 20px;
+}
+
+.form-chek__title {
+  margin: 0 0 50px 0;
+  width: 217px;
+  align-self: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #d22856;
+  font-weight:400;
+  text-transform: uppercase;
+}
+
+.form-chek__chek,
+.form-chek__chek-radio {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #283645;
+  margin: 0 0 63px 61px;
+  position: relative;
+  cursor: pointer;
+
+
+}
+.form-chek__box,
+.form-chek__box-radio{
+  display: none;
+}
+
+  .form-chek__chek::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border:  2px solid #e5e5e5;
+  background-color: #ffffff;
+  position: absolute;
+  left: -61px;
+  bottom: -5px;
+}
+
+ .form-chek__chek-radio::before {
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 36px;
+  /*border: solid 2px #e5e5e5;*/
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -61px;
+  bottom: -5px;
+}
+
+.form-chek__box:checked + .form-chek__chek::before {
+  content: "";
+  position: absolute;
+  background: url(../img/icon/icon-yes.svg) no-repeat 50% 50%;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.form-chek__box-radio:checked + .form-chek__chek-radio::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 34px;
+  background-color: #d22856;
+  border: solid 8px #ffffff;
+  box-shadow:  0 0 0 2px #e5e5e5;
+
+}

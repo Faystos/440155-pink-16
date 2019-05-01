@@ -1,70 +1,74 @@
+.nav {
+  background-color: #283645;
+  margin: 0 0 0.5px;
+}
 
-  .nav {
-    background-color: #283645;
-    margin: 0 0 0.5px 0
+.nav-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0 -20px;
+}
 
+.nav__controls {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 #000000;
+  padding: 24px 0;
+  margin: 0 -20px;
+}
 
-  }
+.nav__home {
+  margin: 0 77px 0 0;
+}
 
-  .tablet-logo {
-    display: none;
-  }
+.nav__button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  margin: 0 0 0 77px;
+  cursor: pointer;
+}
 
-  .nav-list {
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.78;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0;
-    margin: 0 -20px 0 -20px;
-  }
+.nav-list {}
 
+.nav-list__menu {
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  margin: 0 -20px;
+}
+
+.nav-list__menu a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.nav__wrap {
+  margin: 0 20px;
+}
+
+@media (min-width: 720px) {
   .nav__controls {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 0 0 #000000;
-    padding: 24px 0 24px 0;
-    margin: 0 -20px 0 -20px;
+    padding: 42px 0;
   }
-
-  .nav__home {
-    margin: 0 77px 0 0;
-
-  }
-
   .nav__button {
-    padding: 0;
-    border: none;
-    color: inherit;
-    background-color: transparent;
-    margin: 0 0 0 77px;
-    cursor: pointer;
+    margin: 0 0 0 225px;
   }
-  .nav-list {
-
+  .nav__home {
+    margin: 0 225px 0 0;
   }
 
-  .nav-list__menu {
-    box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
-    margin: 0 -20px 0 -20px;
 
-  }
-
-  .nav-list__menu a {
-    display: block;
-    height: 100%;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.78;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    padding: 15px 0 15px 0;
-  }
-
-  .nav__wrap {
-    margin: 0 20px 0 20px;
-  }
+}

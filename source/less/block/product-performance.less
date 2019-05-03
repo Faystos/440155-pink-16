@@ -1,35 +1,32 @@
 .product-performance {
   background-color: #283645;
   text-align: center;
-  padding: 0px 0 45px 0;
+  padding: 0 0 45px;
   position: relative;
-  margin: -40px 0 0 0;
+  margin: 0;
+  min-height: 619px;
 }
 
 .product-performance__wrap {
   padding: 0 20px;
 }
 
+.product-performance__info {
+  width: 281px;
+  text-align: center;
+  margin: auto;
+}
+
 .product-performance__image {
-  background: url("../img/icon/bg-product-performance-mobile.jpg") no-repeat 50% 100%;
+  background: url("../img/icon/iphone-5-in-hand-png.png") no-repeat 100% 120%, url("../img/icon/bg-product-performance-mobile.jpg") no-repeat 50% 100%;
   min-height: 396px;
   margin: 0 0 28px;
-  background-size: cover;
+  background-size: 480px, cover;
   position: relative;
 }
 
-.product-performance__image--bg {
-  min-height: 396px;
-  background: url("../img/icon/iphone-5-in-hand-png.png") no-repeat 87% 100%;
-}
-/*.product-performance__image img {
-  position: absolute;
-  bottom: 0;
-  left: -26%;
-transform: translateX(-100px) translateY(195px);
-}*/
 .product-performance__download {
-  min-width: 281px;
+  min-width: 100%;
   padding: 18px 0;
   color: inherit;
   background-color: transparent;
@@ -39,7 +36,7 @@ transform: translateX(-100px) translateY(195px);
   font-weight: 700;
   color: #ffffff;
   border-radius: 50px;
-  margin: 0 0 32px;
+  margin: 0 0 25px;
   cursor: pointer;
 }
 
@@ -48,7 +45,7 @@ transform: translateX(-100px) translateY(195px);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 0 28px;
+  margin: 0 0 20px;
 }
 
 .product-performance__system {
@@ -67,34 +64,48 @@ transform: translateX(-100px) translateY(195px);
 .product-performance__parag {
   display: none;
 }
-@media (min-width: 720px) {
+/////////////////////////////////////////
+@media (min-width: 660px) {
   .product-performance__image,
   .product-performance__image--bg {
     display: none;
   }
 
   .product-performance {
-    padding: 103px 0 0;
+    padding: 80px 0 0;
     text-align: left;
     min-height: 619px;
-    background: url("../img/icon/bg-back-tablet.jpg") no-repeat 50% 100%;
+    background: url("../img/icon/iphone-hand-tablet.png") no-repeat 50% 100%, url("../img/icon/bg-back-tablet.jpg") no-repeat 50% 100%;
+    background-size: 715px, 185%;
+    margin: 0;
   }
 
   .product-performance__wrap {
-    display: flex;
+    padding: 0 20px;
+    /*display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    min-height: 545px;
-    background: url("../img/icon/iphone-hand-tablet.png") no-repeat 50% 100%;
+    justify-content: flex-start;  */
+  }
 
+  .product-performance__info {
+    width: 300px;
+    margin: 0;
+  }
+
+  .product-performance__download {
+    margin: 0 0 35px;
   }
 
   .product-performance__support {
-    justify-content: flex-start;
+    margin: auto;
   }
 
   .product-performance__availability {
+    width: 295px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
     margin: 0;
   }
 
@@ -105,6 +116,6 @@ transform: translateX(-100px) translateY(195px);
     color: #ffffff;
     width: 186px;
     text-align: center;
-    margin: 0 0 39px 50px;
+    margin: 0 0 25px;
   }
 }

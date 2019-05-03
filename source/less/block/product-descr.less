@@ -1,48 +1,91 @@
+.product-descr {
+  padding: 65px 0 0 0;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+}
 
+.product-descr__wrap {
+  padding: 0 20px;
+}
 
-  .product-descr {
-    padding: 65px 5px 0 5px;
-    background-color: #f2f2f2;
-    background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
-    background-size: 100% 32px;
-    background-repeat: no-repeat;
-
-
-  }
-
-  .product-descr__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.product-descr__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .product-descr__clause {
+  width: 254px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 20px;
 }
 
-.product-descr__clause:nth-of-type(3){
-  background-image: url(../img/icon/iphone-screen-smile.png);
+.product-descr__clause:last-of-type {
+  background-image: url("../img/icon/iphone-screen-smile.png");
   background-repeat: no-repeat;
   background-position: 50% 130%;
   padding: 0 0 350px 0;
-
 }
 
-.product-descr__title{
+.product-descr__title {
   font-size: 18px;
-  margin: 0 0 10px 0;
+  margin: 0 auto;
 }
 
 .product-descr__parag {
-  display: block;
-  width: 290px;
+  /*display: block;*/
+  width: 100%;
   text-align: center;
-  margin:0;
+  margin: 0 auto;
 }
 
 .product-descr__image {
   display: none;
+}
+@media (min-width: 660px) {
+
+  .product-descr {
+  display: flex;
+  padding: 0 20px 0 20px;
+  background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
+  background-size: 100% 50px;
+  background-repeat: no-repeat;
+
+  }
+  .product-descr:before {
+    content: url(../img/icon/iphone-screen-3-tablet.png);
+    margin: 0 10px 0 0;
+  }
+
+
+  .product-descr__list {
+    min-width: 100%;
+    margin: 65px 0 0 0;
+
+  }
+
+  .product-descr__clause {
+    width: 338px;
+    text-align: left;
+    align-items: flex-start;
+
+  }
+
+  .product-descr__parag {
+    text-align: left;
+    width: 100%;
+  }
+
+  .product-descr__clause:last-of-type {
+    background: none;
+    padding: 0;
+
+  }
+  .product-descr__wrap {
+    padding: 0;
+  }
 }

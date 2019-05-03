@@ -23,7 +23,7 @@
   justify-content: center;
   box-shadow: 0 1px 0 0 #000000;
   padding: 24px 0;
-  ;
+  margin: 0 -20px;
 }
 
 .nav__home {
@@ -41,7 +41,7 @@
 
 .nav-list__menu {
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
-  margin: 0;
+  margin: 0 -20px;
 }
 
 .nav-list__menu a {
@@ -58,18 +58,26 @@
 }
 
 .nav__wrap {
-  padding:  0 20px;
+  padding: 0 20px;
 }
 
 @media (min-width: 660px) {
   .nav__controls {
     padding: 42px 0;
+    margin: 0 -37px;
   }
   .nav__button {
     margin: 0 0 0 225px;
   }
   .nav__home {
     margin: 0 225px 0 0;
+  }
+  .nav__wrap {
+    padding: 0 37px;
+  }
+
+  .nav-list__menu {
+    margin: 0 -37px;
   }
 
 

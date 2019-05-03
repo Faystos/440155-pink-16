@@ -1,12 +1,9 @@
-
-
 .proposal {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 46px 0 0 0;
-
+  padding: 46px 50px 0;
 }
 
 .proposal__parag {
@@ -16,7 +13,27 @@
   font-weight: 300;
   color: #283645;
   text-align: center;
+  margin: 0 0 20px;
+}
+@media (min-width: 660px) {
+  .proposal {
+    padding: 46px 37px 0 38px;
+    margin: 0 0 50px;
+  }
 
+  .proposal__parag {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #283645;
+    width: 590px;
+  }
 
+  .proposal__parag:first-of-type {
+    width: 590px;
+  }
 
+  .proposal__parag:last-of-type {
+    width: 500px;
+  }
 }

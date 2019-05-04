@@ -2,7 +2,11 @@
   text-align: center;
 }
 
-.communication__descr{
+.communication__wrap {
+  padding: 0 20px;
+}
+
+.communication__descr {
   font-size: 24px;
   font-weight: 300;
   color: #283645;
@@ -16,30 +20,54 @@
   margin: 0;
 }
 
-.communication__number,
+.communication__address,
 .communication__mail,
-.communication__address {
+.communication__number {
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
   font-style: normal;
   text-decoration: none;
 }
-.communication__address{
-width: 215px;
-margin: auto;
+
+.communication__address {
+  width: 215px;
+  margin: auto;
 }
 
 .communication__descr:last-of-type {
-  margin: 0 0 43px 0;
+  margin: 0 0 43px;
 }
 
-.communication__info-number,
+.communication__info-address,
 .communication__info-mail,
-.communication__info-address {
-  margin: 0 0 28px 0;
+.communication__info-number {
+  margin: 0 0 28px;
 }
 
 .communication__map {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0;
+}
+@media (min-width: 660px) {
+  .communication__descr {
+    font-size: 40px;
+    font-weight: 300;
+  }
+.communication__info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.communication__info-number {
+  margin: 0 50px 0 0;
+}
+.communication__info-mail {
+    margin: 0 0 0 50px;
+}
+
+.communication__info-address {
+  margin: 50px 0 0 0;
+}
+
 }

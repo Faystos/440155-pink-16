@@ -24,3 +24,34 @@ body {
   -webkit-font-kerning: none;
   font-kerning: none;
 }
+
+.hit::before {
+  content: "";
+  background-image: url(../img/icon/hit-ribbon.png);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  width: 74px;
+  height: 72px;
+}
+
+.hit::after {
+  content: "ХИТ";
+  font-size: 10px;
+  line-height: 2.1;
+  color: #ffffff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top:15px;
+  left: 15px;
+  z-index: 2;
+  font-weight: 400;
+  
+}
+
+@media (min-width: 660px) {
+  .hit::after{
+    font-weight: 600;
+  }
+}

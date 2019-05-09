@@ -1,0 +1,53 @@
+.hit::before {
+ content: "";
+ background-image: url(../img/icon/hit-ribbon.png);
+ position: absolute;
+ top:0;
+ left: 0;
+ z-index: 1;
+ width: 74px;
+ height: 72px;
+}
+
+.hit::after {
+ content: "ХИТ";
+ font-size: 14px;
+ line-height: 2.1;
+ color: #ffffff;
+ transform: rotate(-45deg);
+ position: absolute;
+ top:13px;
+ left: 13px;
+ z-index: 2;
+ font-weight: 400;
+
+}
+
+@media (min-width: 660px) {
+  .hit::before {
+    content: "";
+    background-image: url(../img/icon/hit-ribbon.png);
+    background-size:cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 68px;
+    height: 68px;
+
+  }
+
+   .hit::after {
+    content: "ХИТ";
+    font-size: 14px;
+    line-height: 2.1;
+    color: #ffffff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:10px;
+    left: 10px;
+    z-index: 2;
+    font-weight: 400;
+}
+
+}

@@ -1,6 +1,6 @@
 .nav {
   background-color: #283645;
-  margin: 0 0 -66px 0;
+  margin: 0 0 -69px 0;
   position: relative;
   z-index: 1;
 }
@@ -27,6 +27,16 @@
 
 .nav__home {
   margin: 0 77px 0 0;
+}
+
+.nav__home svg {
+  &:hover {
+    fill: #d22856;
+  }
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 @media (max-width: 959px) {
   .nav {
@@ -131,9 +141,20 @@
   padding: 0 20px;
 }
 @media (min-width: 660px) {
+
+  .nav {
+    margin: 0 0 -111px 0;
+  }
   .nav__controls {
-    padding: 42px 19px;
     margin: 0 -37px;
+    padding: 40px 19px;
+  }
+
+  .nav--closed .nav__controls {
+    padding: 40px 19px;
+    min-height: 110px;
+    //margin: 0 -37px;
+    box-shadow: none;
   }
 
   .nav__button {

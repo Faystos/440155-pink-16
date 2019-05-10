@@ -1,18 +1,36 @@
 .initial {
-background: url(../img/icon/bg-product-performance-mobile.jpg) no-repeat 50% 23%;
-min-height: 180px;
-
+  background: url("../img/icon/bg-product-performance-mobile.jpg") no-repeat 50% 1%;
+  min-height: 237px;
 }
 
 .initial__wrap {
-  padding: 35px 20px 0 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
 .initial__title {
-  margin: auto;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
   width: 240px;
   text-align: center;
+  display: inline-block;
+  margin: 95px 0 0;
+}
+@media (min-width: 660px) {
+  .initial {
+    background: url("../img/icon/bg-back-tablet.jpg") no-repeat 50% 1%;
+    min-height: 440px;
+  }
+
+  .initial__title {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 355px;
+    margin: 170px 0 0 0;
+  }
 }

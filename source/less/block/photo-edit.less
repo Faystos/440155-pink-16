@@ -80,7 +80,7 @@
 
 .photo-edit__button-cancel,
 .photo-edit__button-send {
-  min-width: 281px;
+  width: 100%;
   padding: 18px 0;
   color: inherit;
   background-color: transparent;
@@ -116,11 +116,11 @@
 
   .photo-edit__controls {
     width: 245px;
-    height: 70px;
-    padding: 32px 0 0 0;
+    height: 50px;
+    padding: 19px 0 0 0;
   }
   .photo-edit__toggle {
-    top: 25px;
+    top: 12px;
     right: 100px;
 
   }
@@ -134,18 +134,24 @@
     display: none;
   }
 
+  .photo-edit__block-setting {
+    min-width: 273px;
+  }
+
   .photo-edit__load-photo {
     display: flex;
     flex-wrap: wrap;
   }
 
   .photo-edit__block-control {
-    height: 250px;
+    width: 100%;    
+    margin-bottom: 57px;
   }
 
   .photo-edit__button-controls{
     display: flex;
     flex-direction: column;
+    width: 260px;
 
   }
 }

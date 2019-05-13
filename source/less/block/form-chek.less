@@ -3,10 +3,10 @@
   margin: 0 0 41px 0;
 }
 .form-chek__wrap {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: baseline;*/
   padding: 40px 20px 5px 20px;
 }
 
@@ -81,4 +81,20 @@
   border: solid 8px #ffffff;
   box-shadow:  0 0 0 2px #e5e5e5;
 
+}
+
+
+@media (min-width: 660px) {
+.form-chek {
+  background: none;
+  &--system {
+  order: 2;
+}
+&--progress {
+  order: 4;
+}
+}
+.form-chek__title {
+  margin: 0 32px 0 32px;
+}
 }

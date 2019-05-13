@@ -8,6 +8,7 @@
 
 .photo-edit__wrap {
   padding: 0 18px 0 20px;
+
 }
 
 .photo-edit__settings {
@@ -49,6 +50,11 @@
   top: -6px;
   right: 100px;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .photo-edit__your-photo {
@@ -78,6 +84,10 @@
   cursor: pointer;
 }
 
+.photo-edit__controls svg{
+  display: none;
+}
+
 .photo-edit__button-cancel,
 .photo-edit__button-send {
   width: 100%;
@@ -94,10 +104,28 @@
   cursor: pointer;
 }
 
+.photo-edit__button-send {
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
+}
+
 .photo-edit__button-cancel {
   opacity: 0.1;
   border: solid 3px #283645;
   color: #283645;
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: #283645;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+  }
 }
 @media (min-width: 660px) {
   .photo-edit{
@@ -118,6 +146,7 @@
     width: 245px;
     height: 50px;
     padding: 19px 0 0 0;
+    position: relative;
   }
   .photo-edit__toggle {
     top: 12px;
@@ -141,11 +170,13 @@
   .photo-edit__load-photo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .photo-edit__block-control {
-    width: 100%;    
-    margin-bottom: 57px;
+    width: 100%;
+    margin-bottom: 67px;
   }
 
   .photo-edit__button-controls{
@@ -154,4 +185,31 @@
     width: 260px;
 
   }
+
+  .photo-edit__button-send {
+    margin: 0 0 24px 0;
+  }
+
+
+  .photo-edit__controls svg {
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+
+  .photo-edit__crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-edit__casting svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-edit__contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+
 }

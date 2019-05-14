@@ -16,6 +16,17 @@
   padding: 14px 45px;
   border-radius: 5px;
   margin: 0 0 45px 0;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
 }
 
 .form-contest__required {
@@ -31,25 +42,50 @@
   color: #d22856;
 }
 
+.form-contest__control{
+
+  &--wrap {
+    padding: 0 20px;
+  }
+}
+
+//временный стиль
+legend {
+  text-align: center;
+
+}
+
 @media (min-width: 660px) {
 
   .form-contest__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     order: 6;
+  }
+
+  .form-contest__button {
+    margin: 0;
+  }
+  .form-contest__required{
+    margin: 0;
   }
 
 
 
 //временные стили
-  fieldset {
+  /*fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
     border: solid 2px #e5e5e5;
-  }
+  }*/
 
   legend {
     text-align: center;
+
   }
 /////////////////////////////
 }

@@ -42,9 +42,9 @@
           </button>
         </div>
         <ul class="nav-list">
-          <li class="nav-list__menu"><a class="nav-list__clause">главная</a></li>
+          <li class="nav-list__menu"><a href="index.html" class="nav-list__clause">главная</a></li>
           <li class="nav-list__menu"><a href="photo.html" class="nav-list__clause">фотографии</a></li>
-          <li class="nav-list__menu"><a href="form.html" class="nav-list__clause">конкурс</a></li>
+          <li class="nav-list__menu"><a class="nav-list__clause">конкурс</a></li>
           <li class="nav-list__menu"><a href="#" class="nav-list__clause">html academy</a></li>
         </ul>
       </div>
@@ -107,9 +107,9 @@
             <legend>
               <h3 class="info-form__title">Контактная информация</h3>
             </legend>
-            <label class="info-form__name" for="phone">Номер телефона <input class="info-form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"></label>
+            <label class="info-form__name info-form__name--phone" for="phone">Номер телефона <input class="info-form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"></label>
 
-            <label class="info-form__name" for="email">адрес почты <input class="info-form__field" type="email" name="email" id="email" placeholder="Введите почту *" required></label>
+            <label class="info-form__name info-form__name--mail" for="email">адрес почты <input class="info-form__field" type="email" name="email" id="email" placeholder="Введите почту *" required></label>
           </fieldset>
         </div>
       </section>
@@ -144,7 +144,7 @@
         </div>
       </section>
 
-      <div class="form-contest__control">
+      <div class="form-contest__control form-contest__control--wrap">
         <button type="submit" name="ship" class="form-contest__button">Отправить форму</button>
 
         <p class="form-contest__required">— обязательные поля</p>
@@ -160,13 +160,13 @@
       </div>
     </div>
 
-    <div class="popup-request popup">
+    <!-- <div class="popup-request popup">
       <h3 class="popup-request__title">Ваша заявка отправлена</h3>
       <p class="popup-request__parag">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="popup-request__button">
         <button class="popup-request__close" type="button" name="close">ЗАКРЫТЬ ОКНО</button>
       </div>
-    </div>
+    </div> -->
 
 
 

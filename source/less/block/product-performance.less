@@ -1,7 +1,7 @@
 .product-performance {
   background-color: #283645;
   text-align: center;
-  padding: 0 0 45px;
+  padding: 0 0 33px 0;
   position: relative;
   margin: 0;
   min-height: 733px;
@@ -18,39 +18,66 @@
 }
 
 .product-performance__image {
-  background: url("../img/icon/iphone-5-in-hand-png.png") no-repeat 100% 120%, url("../img/icon/bg-product-performance-mobile.jpg") no-repeat 50% 100%;
+  background: url("../img/icon/iphone-5-in-hand-png.png") no-repeat 93% 120%, url("../img/icon/bg-product-performance-mobile.jpg") no-repeat 50% 100%;
   min-height: 462px;
-  margin: 0 0 28px;
-  background-size: 480px, 100%;
+  margin: 0 0 29px;
+  // background-size: 480px, 100%;
+  background-size: 500px, 100%;
   position: relative;
 }
 
 .product-performance__download {
   min-width: 100%;
-  padding: 18px 0;
+  padding: 15px 30px;
   color: inherit;
   background-color: transparent;
   border: solid 3px #ffffff;
+  font-family: Open Sans;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   color: #ffffff;
   border-radius: 50px;
-  margin: 0 0 25px;
+  margin: 0 0 34px 0;
   cursor: pointer;
 }
 
 .product-performance__support {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
 }
 
 .product-performance__system {
-  margin: 0 17px;
+  //margin: 0 18px;
 }
+
+.system__icon{
+  max-width: none;
+  margin: 0 17px;
+  //padding: 5px 5px 5px 5px;
+  &--apple {
+    width: 47px;
+    height: 56px;
+    margin: 0 16px;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    margin: 0 19px;
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    margin: 0 17px 4px 17px;
+  }
+}
+
+
 
 .product-performance__availability {
   width: 245px;

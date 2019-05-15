@@ -1,19 +1,28 @@
 .communication {
-  
+
 }
 
 .communication__wrap {
-  padding: 15px 20px 0 20px;
+  padding: 40px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.communication__info {
+  z-index: 1;
 }
 
 .communication__descr {
   font-size: 24px;
   font-weight: 300;
   color: #283645;
-  margin: 0;
+  margin: 0 0 -5px 0;
+}
+
+.communication__descr:last-of-type {
+  margin: 0 0 33px;
 }
 
 .communication__parag {
@@ -35,21 +44,40 @@
 
 .communication__address {
   width: 215px;
-  margin: auto;
 }
 
-.communication__descr:last-of-type {
-  margin: 0 0 43px;
+// .communication__descr:last-of-type {
+//   margin: 0 0 43px;
+// }
+
+.communication__info-address{
+  margin: 0 0 19px 0;
+  text-align: center;
+}
+.communication__info-mail {
+  margin: 0 0 22px 0;
+}
+
+.communication__info-number {
+  margin: 0 0 18px 0;
 }
 
 .communication__info-address,
 .communication__info-mail,
 .communication__info-number {
-  margin: 0 0 28px;
+  //margin: 0 0 19px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .communication__map {
-  margin: 5px 0 0;
+  height: 187px;
+}
+
+.communication__map img {
+  max-width: none;
 }
 @media (min-width: 660px) {
   .communication__descr {

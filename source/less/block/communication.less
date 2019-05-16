@@ -80,9 +80,17 @@
   max-width: none;
 }
 @media (min-width: 660px) {
+  .communication {
+   margin: 0;
+  }
+
   .communication__descr {
     font-size: 40px;
     font-weight: 300;
+  }
+
+  .communication__descr:last-of-type {
+    margin: 0 0 37px;
   }
   .communication__wrap {
     padding: 25px 20px 0 20px;
@@ -90,19 +98,32 @@
 
 .communication__info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 0 35px 0;
 }
 
 .communication__info-number {
-  margin: 0 50px 0 0;
+  margin: 0 0 0 45px;
 }
 .communication__info-mail {
-    margin: 0 0 0 50px;
+    margin: 0 30px 0 0;
 }
 
 .communication__info-address {
-  margin: 50px 0 0 0;
+  margin: 45px auto 0 auto;
+  align-self: center;
+}
+
+.communication__info-mail .communication__parag {
+  margin: 0 0 3px 0;
+}
+.communication__info-address .communication__parag {
+  margin: 0 0 3px 0;
+}
+
+.communication__map {
+  height: 360px;
 }
 
 }

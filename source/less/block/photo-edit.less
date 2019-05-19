@@ -14,9 +14,9 @@
 
 
 .photo-edit__controls {
-  padding: 0 18px 32px 36px;
+  padding: 0 18px 34px 36px;
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 0 36px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100vw;
   position: relative;
@@ -46,7 +46,8 @@
   border-radius: 50%;
   position: absolute;
   top: -6px;
-  right: 75px;
+  // right: 75px;
+  right: 23.5%;
   cursor: pointer;
 
   &:hover,
@@ -58,7 +59,7 @@
 .photo-edit__your-photo {
 
   width: 280px;
-  margin: 0 0 42px 0;
+  margin: 0 auto 42px auto;
 }
 
 .photo-edit__load {
@@ -91,20 +92,23 @@
 .photo-edit__button-cancel,
 .photo-edit__button-send {
   width: 100%;
-  padding: 18px 0;
+  padding: 18px 5px 18px 0;
   color: inherit;
   background-color: transparent;
-  border: solid 3px #d22856;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
-  color: #d22856;
   border-radius: 50px;
-  margin: 0 0 12px;
+
   cursor: pointer;
+  text-align: center;
+  outline: none;
 }
 
 .photo-edit__button-send {
+color: #d22856;
+border: solid 3px #d22856;
+margin: 0 0 7px 0;
   &:hover {
     background-color: #d22856;
     color: #ffffff;

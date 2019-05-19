@@ -190,19 +190,23 @@
 
 .product-price__not-check {
   position: absolute;
-  top: 9px;
-  right: 63px;
+  // top: 9px;
+  // right: 63px;
   width: 27px;
   height: 26px;
+  top: 29%;
+  right: 45%;
 }
 
 .product-price__check{
   display: inline;
   position: absolute;
-  top: 11px;
-  right: 60px;
+  // top: 11px;
+  // right: 60px;
   width: 31px;
   height: 21px;
+  top: 35%;
+  right: 44%;
 }
 
 .product-price__descr{
@@ -250,6 +254,35 @@
 .product-price__not-text {
   display: none;
 }
+}
 
+@media (min-width: 960px) {
+
+  .product-price {
+    //background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
+    background-size: 100% 80px;
+    padding: 147px 130px 53px 130px;
+  }
+
+  .product-price__descr{
+    width: 25%;
+    padding: 17px 20px 17px 20px;
+  }
+
+  .product-price__title {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .product-price__parag {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .product-price__clause {
+    font-size: 18px;
+    line-height: 1.67;
+    padding: 15px 0 15px 18px;
+  }
 
 }

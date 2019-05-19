@@ -86,7 +86,7 @@
 ////////////////////////////////////////////////////////////////////////////
 @media (min-width: 660px){
   .product-comment {
-    margin: 0 0 17px 0;
+    margin: 0 0 40px 0;
 
   }
 
@@ -95,7 +95,7 @@
   }
   .product-comment__slider{
     flex-direction: column-reverse;
-    margin-bottom: 35px;
+    margin-bottom: 0;
   }
 
   .product-comment__title {
@@ -114,8 +114,78 @@
     margin: 0 0 16px 0;
   }
 
+}
 
+@media (min-width: 960px) {
+    .product-comment{
+      padding: 159px 0 0 0;
+      position: relative;
+    }
 
+    .product-comment:before {
+      content: "";
+      width: 79px;
+      height: 63px;
+      background: url(../img/icon/quotes-svg.svg) no-repeat 50% 100%;
+      position: absolute;
+      top: 19%;
+      left: 47%;
+      opacity: 0.1;
+    }
 
+  .product-comment__parag {
+    width: 690px;
+  }
 
+  .product-comment__title{
+    font-size: 24px;
+    margin: 0 0 -3px 0;
+  }
+
+  .product-comment__info{
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .product-comment__btns {
+    display: none;
+  }
+
+  .product-comment__control {
+    display: block;
+  }
+
+  .product-comment__control button {
+    width: 22px;
+    height: 41px;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+    cursor:  pointer;
+    outline: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .product-comment__left {
+    background: url(../img/icon/left-arrow-svg.svg) 50% 100% no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 57%;
+    left: 11%;
+  }
+
+  .product-comment__right {
+    background: url(../img/icon/right-arrow-svg.svg) 50% 100% no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 57%;
+    right: 11%;
+  }
 }

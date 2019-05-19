@@ -90,7 +90,7 @@
   }
 
   .communication__descr:last-of-type {
-    margin: 0 0 37px;
+    margin: 0 0 37px 0;
   }
   .communication__wrap {
     padding: 25px 20px 0 20px;
@@ -104,10 +104,10 @@
 }
 
 .communication__info-number {
-  margin: 0 0 0 45px;
+  margin: 0 60px 0 45px;
 }
 .communication__info-mail {
-    margin: 0 30px 0 0;
+    margin: 0 30px 0 60px;
 }
 
 .communication__info-address {
@@ -126,4 +126,67 @@
   height: 360px;
 }
 
+}
+
+@media (min-width: 960px) {
+  .communication {
+    padding-top: 59px;
+    margin-bottom: 64px;
+  }
+  .communication__wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .communication__descr {
+    font-size: 50px;
+  }
+
+  .communication__descr:last-of-type {
+    margin: 0 0 50px 0;
+  }
+
+  .communication__info {
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+    width: 894px;
+    padding: 0 1px 0 25px;
+
+  }
+
+
+
+  .communication__info-number{
+    order: 1;
+
+    align-self: flex-start;
+    margin: 0 9px 0 0;
+  }
+  .communication__info-mail {
+    order: 3;
+
+    align-self: flex-start;
+    margin: 0 0 0 3px;
+    padding: 1px 3px 1px 1px;
+  }
+  .communication__info-address {
+    order: 2;
+   padding: 2px 1px 1px 3px;
+    margin: 0 5px 0 9px;
+    line-height: 1.2;
+  }
+
+  .communication__info .communication__parag{
+    margin-bottom: 23px;
+  }
+
+  .communication__info-address .communication__parag {
+    margin: 0 0 25px 0
+  }
+  .communication__info-mail .communication__parag {
+    margin: 0 6px 23px 0;
+  }
+  .communication__map {
+    height: 505px;
+    border: 1px solid black;
+  }
 }

@@ -40,6 +40,15 @@
   border-radius: 50px;
   margin: 0 0 34px 0;
   cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .product-performance__support {
@@ -151,16 +160,16 @@
 @media (min-width: 960px) {
 
   .product-performance{
-    min-height: 854px;
+    // min-height: 854px;
+    min-height: 857px;
   }
 
   .product-performance {
-    //padding: 80px 0 0;
-    //text-align: left;
-    //min-height: 729px;
-    background: url("../img/icon/iphone-hand-tablet.png") no-repeat 68% 101%, url("../img/icon/bg-back-tablet.jpg") no-repeat 50% 80%;
-    background-size: 830px, 181%;
-    //margin: 0;
+    // background: url("../img/icon/iphone-hand-tablet.png") no-repeat 68% 100%, url("../img/icon/bg-back-desktop.jpg") no-repeat 50% 75%;
+    background: url("../img/icon/iphone-hand-tablet.png") no-repeat 68% 100%, url("../img/icon/bg-back-desktop.jpg") no-repeat 50% 75%;
+    // background-size: 830px, 213%;
+    background-size: 830px, auto;
+
   }
 
   .product-performance__info {
@@ -177,7 +186,11 @@
   .product-performance__download{
     font-size: 21px;
     line-height: 0.86;
-    padding: 15px 15px 16px 15px;
+    padding: 16px 15px 16px 15px;
     margin-bottom: 68px;
+  }
+
+  .product-performance__support {
+    margin: 0 0 58px 0;
   }
 }

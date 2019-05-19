@@ -7,18 +7,16 @@
 }
 
 .photo-edit__wrap {
-  padding: 0 18px 0 20px;
+  padding: 0 20px 0 20px;
 
 }
 
-.photo-edit__settings {
-  margin: 0 0 40px;
-}
+
 
 .photo-edit__controls {
   padding: 0 18px 32px 36px;
   position: relative;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100vw;
   position: relative;
@@ -36,7 +34,7 @@
 }
 
 .photo-edit__bar {
-  width: 80%;
+  width: 91%;
   border-bottom: 2px solid #000000;
 }
 
@@ -48,7 +46,7 @@
   border-radius: 50%;
   position: absolute;
   top: -6px;
-  right: 100px;
+  right: 75px;
   cursor: pointer;
 
   &:hover,
@@ -58,7 +56,9 @@
 }
 
 .photo-edit__your-photo {
-  margin: 0 0 42px;
+
+  width: 280px;
+  margin: 0 0 42px 0;
 }
 
 .photo-edit__load {
@@ -70,19 +70,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0 20px 5px 10px;
+  margin: 0 0 27px 0;
 }
 
-.photo-edit__setting {
+.photo-edit__button-setting {
   background-color: transparent;
-  margin: 0;
+  margin: 0 19px 0 17px;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
-.photo-edit__setting img {
-  margin: 0 17px;
-  cursor: pointer;
-}
+
 
 .photo-edit__controls svg{
   display: none;
@@ -127,6 +127,9 @@
     opacity: 0.3;
   }
 }
+
+/////////////////////////////////
+
 @media (min-width: 660px) {
   .photo-edit{
   padding: 57px 0 54px 0;

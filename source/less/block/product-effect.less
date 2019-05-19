@@ -4,7 +4,7 @@
 @media (min-width: 660px) {
   .product-effect {
     display: block;
-    margin: 0 0 75px 0;
+    margin: 0 0 75px;
   }
 
   .product-effect__wrap {
@@ -16,7 +16,7 @@
 
   .product-effect__descr {
     //width: 300px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 7.5%;
   }
 
   .product-effect__time-block {
@@ -24,22 +24,23 @@
     width: 238px;
     height: 276px;
     margin: 0;
-
   }
 
-  .product-effect__time-block:before {
-    content: url("../img/icon/timer-svg-tablet.svg");
-    display: block;
+  .product-effect__time-block svg {
+    // content: url("../img/icon/timer-svg-tablet.svg");
+    // display: block;
     position: absolute;
     width: 238px;
     height: 276px;
     top: 1px;
     left: -9px;
-    opacity: 0.1;
+    z-index: 1;
+    // opacity: 0.1;
   }
 
   .product-effect__time {
     display: block;
+    position: absolute;
     width: 204px;
     height: 204px;
     font-size: 96px;
@@ -50,6 +51,7 @@
     border-radius: 50%;
     padding: 8px 5px 9px 31px;
     margin: 56px 0 0 7px;
+    z-index: 2;
   }
 
   .product-effect__title {
@@ -64,16 +66,74 @@
     font-size: 14px;
     line-height: 1.71;
     color: #283645;
-    margin: 3px 0  13px 10px;
+    margin: 3px 0 13px 10px;
     width: 300px;
-
   }
 
   .product-effect__research {
     color: #d22856;
-
-    margin: 3px 0  0 10px;
+    margin: 3px 0 0 10px;
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+@media (min-width: 960px) {
+  .product-effect {
+    background-color: #f2f2f2;
+    padding-top: 59px;
+    padding-bottom: 53px;
+    margin: 0;
+  }
+
+  .product-effect__wrap {
+    justify-content: flex-start;
+  }
+
+  .product-effect__time-block {
+    width: 298px;
+    height: 345px;
+    margin-left: 128px;
+    margin-top: 17px;
+    margin-right: 1%;
+  }
+
+  .product-effect__time-block svg {
+    top: -13px;
+    left: -15px;
+    width: 298px;
+    height: 345px;
+  }
+
+  .product-effect__time {
+    padding: 9px 5px 9px 41px;
+    width: 250px;
+    height: 250px;
+    font-size: 120px;
+    line-height: 1.56;
+    border: 16px solid #d22856;
+  }
+
+  .product-effect__descr {
+    padding: 2px;
+    margin: 0 0 0 3%;
+  }
+
+  .product-effect__title {
+    width: 300px;
+    margin: 34px 0 21px;
+  }
+
+  .product-effect__parag {
+    margin: 0;
+    width: 535px;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 30px;
+  }
+
+  .product-effect__research {
+    font-size: 18px;
+    line-height: 1.67;
+    margin: 0;
   }
 }

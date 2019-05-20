@@ -8,7 +8,9 @@
   padding: 0 20px;
 }
 
-
+.albums__list-photo {
+    margin: 0 auto;
+  }
 
 .albums-comment__ponorama {
   width: 100vw;
@@ -20,6 +22,8 @@
 }
 
 .albums-comment__photo{
+  // width: 100%;
+  // height: 180px;
   margin-bottom: 18px;
 }
 
@@ -36,163 +40,173 @@
   right: 0;
 }
 
+
 .albums-comment {
   width: 280px;
   background-color: #f2f2f2;
-  position: relative;
   margin: 0 auto 20px auto;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   &--ponorama {
-    width: 280px;
     background-color: #f2f2f2;
     position: relative;
-    margin: 0 auto 20px auto;
-    padding-bottom: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .albums-comment__author {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   font-weight: 700;
   font-style: normal;
   color: #283645;
-  //padding: 0 0 0 18px;
-  margin: 0 0 0 18px;
+  margin: 0 0 0 17px;
+   width: 240px;
 }
+
+
 
 .albums-comment__time {
   font-weight: 300;
   margin: 0;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .albums-comment__parag {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.75;
+  letter-spacing: 0.3px;
   color: #283645;
-  letter-spacing: 0.2px;
-  margin: 0 0 10px 0;
+  margin: 0;
+  width: 240px;
 
   &--ponorama {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.75;
-    letter-spacing: 0.2px;
-
-    margin: 0 0 10px 0;
+    letter-spacing: 0.3px;
+    width: 262px;
+    margin: 0;
   }
 }
 
 .albums-comment__quote {
-  //padding: 0 0 0 18px;
-  margin: 0 0 0 18px;
+  margin: 0 0 11px 17px;
 }
 
-.albums-comment__author,
-.albums-comment__parag {
-  width: 240px;
-}
+
 
 .albums-comment__like-comment {
+
   background: none;
   border: none;
   font-size: 12px;
   line-height: 2;
   color: #d22856;
   text-transform: uppercase;
-  margin: 0 0 0 14px;
+  margin: 0 0 0 18px;
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
 
   &--ponorama {
+
     background: none;
     border: none;
     font-size: 12px;
     line-height: 2;
     color: #d22856;
     text-transform: uppercase;
-    margin: 0 0 0 14px;
+    margin: 0 0 0 18px;
     cursor: pointer;
+    padding: 0;
+    letter-spacing: normal;
+    display: flex;
+    align-items: center;
   }
 }
 
 .albums-comment__like-icon {
-  margin: 5px 15px 0 0;
+margin-right: 18px;
   &--ponorama {
-    margin: 5px 15px 0 0;
+    margin-right: 18px;
   }
 }
 
-/*.albums-comment__like-comment::before {
-  content: url("../img/icon/icon-heart-like-6.svg");
-  weight: 13px;
-  height: 12px;
-  margin: 0 19px 0 0;
-}*/
-
 //////////////////////////////////////
 
-/* @media (max-width: 660px) {
+ @media (min-width: 660px) {
+
   .albums-comment {
     width: 300px;
-    margin: 0 0 20px;
+    margin: 0 0 20px 0;
+    padding: 0 0 22px 0;
 
     &--ponorama {
       margin: 0 0 50px 0;
+      padding: 0 0 27px 0;
     }
   }
 
   .albums__list-photo {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .albums-comment__photo {
     width: 100%;
-    min-height: 300px;
-    margin: 0 0 31px 0;
+    height: 300px;
+    margin: 0 0 24px 0;
   }
 
   .albums-comment__author {
     margin: 0 0 0 28px;
   }
 
-  .albums-comment__quote{
-    margin: 0 0 47px 28px;
+  .albums-comment__quote {
+    margin: 0 0 0 28px;
   }
 
   .albums-comment__parag {
-    width: 200px;
     min-height: 50px;
-    &--ponorama{
+    letter-spacing: 0.3px;
+
+    &--ponorama {
       font-size: 14px;
       font-weight: 300;
       line-height: 1.71;
       color: #283645;
       width: 510px;
+      letter-spacing: 0.3px;
     }
   }
 
 
   .albums-comment__like-comment {
-    margin: 0 0 28px 0;
+    margin: 11px 14px 0 28px;
+    padding: 1px 0 0 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px 0 28px;
-    width: 300px;
-
     &--ponorama {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      justify-content: space-between;
+
       padding: 0 ;
-      width: 300px;
       position: absolute;
-      bottom: 60px;
+      bottom: 72px;
       right: 29px;
       width: 125px;
       margin: 0;
@@ -201,15 +215,17 @@
 
   .albums-comment__ponorama{
     min-height: 509px;
-    margin: 0 0 31px 0;
+    margin: 0 0 25px 0;
   }
 
   .albums-comment__buttom-ponorama {
     top: 57px;
-    right: 20px;
+    right: 0;
   }
 
-  .albums-comment__like-icon--ponorama{
-    margin: 0 0 0 17px;
-  }
-}*/
+  .albums-comment__like-icon--ponorama {
+    margin-right: 0;
+    margin-left: 18px;
+   }
+
+}

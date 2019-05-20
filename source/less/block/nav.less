@@ -33,6 +33,10 @@
 
 .nav__home {
   margin: 0 77px 0 0;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .nav__home svg {
@@ -144,7 +148,7 @@
   }
   .nav__controls {
     margin: 0 -37px;
-    padding: 40px 19px;
+    padding: 25px 19px 40px 19px;
   }
 
   .nav--closed .nav__controls {
@@ -154,11 +158,18 @@
   }
 
   .nav__button {
-    margin: 0 0 0 225px;
+    margin: 20px 0 0 225px;
   }
 
   .nav__home {
     margin: 0 225px 0 0;
+
+    &--mobile {
+      display: none;
+    }
+     &--tablet {
+       display: inline;
+     }
   }
 
   .nav__wrap {

@@ -21,7 +21,7 @@
 }
 
 .info-form__name {
-  width: 160px;
+  //width: 160px;
   font-size: 14px;
   line-height: 2.14;
 
@@ -49,10 +49,18 @@
   }
 }
 
+.info-form__form-block .info-form__field {
+  margin: 10px 0 15px 0;
+}
+
 .info-form__form-block {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: -10px 0 0 0;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .info-form__form-block legend {
@@ -64,6 +72,9 @@
   line-height: 1.67;
   color: #283645;
 }
+
+
+
 ////////////////////////////////////////////////////////////////////
 @media (min-width: 660px) {
   .info-form {

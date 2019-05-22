@@ -71,6 +71,7 @@
     .nav--opened & {
       width: 24px;
       height: 23px;
+      // margin-top: 20px;
     }
     .nav--closed & {
       width: 50px;
@@ -86,6 +87,7 @@
 
   .nav--closed .nav__button--opened {
     display: none;
+
   }
 
   .nav--closed .nav__controls {
@@ -144,30 +146,39 @@
 @media (min-width: 660px) {
 
   .nav {
-    margin: 0 0 -111px 0;
+    margin: 0 0 -110px 0;
   }
   .nav__controls {
     margin: 0 -37px;
-    padding: 25px 19px 40px 19px;
+    padding: 25px 19px 30px 19px;
   }
 
   .nav--closed .nav__controls {
-    padding: 40px 19px;
     min-height: 110px;
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav__button {
-    margin: 20px 0 0 225px;
+    //margin: 20px 0 0 225px;
+
+    .nav--opened & {
+      width: 24px;
+      height: 23px;
+      margin-top: 20px;
+    }
   }
 
   .nav__home {
-    margin: 0 225px 0 0;
+    margin: 0;
 
     &--mobile {
       display: none;
     }
      &--tablet {
+       margin: 0 0 10px 2px;
        display: inline;
      }
   }

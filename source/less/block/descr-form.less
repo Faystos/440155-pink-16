@@ -1,11 +1,10 @@
 .descr-form {
   text-align: center;
-  margin: 0 auto 35px auto;
-
+  margin: 0 auto 35px;
 }
 
 .descr-form__wrap {
-  padding: 45px 20px 0 20px;
+  padding: 45px 20px 0;
 }
 
 .descr-form__parag {
@@ -16,28 +15,33 @@
 }
 
 .descr-form__parag:last-child {
-display: none;
+  display: none;
 }
-
 @media (min-width: 660px) {
   .descr-form {
     margin-bottom: 72px;
   }
-.descr-form__parag{
-  font-size: 18px;
-  line-height: 1.67;
-  margin: 0;
-  width: 490px;
-  margin: 0 auto;
-  padding: 90px 0 0 0
-}
-.descr-form__wrap {
-padding: 0 20px;
 
-}
-.descr-form__parag:last-child {
-display: block;
-padding: 0;
-}
+  .descr-form__parag {
+    font-size: 18px;
+    line-height: 1.67;
+    margin: 0;
+    width: 490px;
+    margin: 0 auto;
+    padding: 90px 0 0;
+  }
 
+  .descr-form__wrap {
+    padding: 0 20px;
+  }
+
+  .descr-form__parag:last-child {
+    display: block;
+    padding: 0;
+  }
+}
+@media (min-width: 960px) {
+  .descr-form__parag {
+    width: 760px;
+  }
 }

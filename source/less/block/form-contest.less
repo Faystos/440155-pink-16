@@ -54,14 +54,18 @@
   }
 }
 
-//временный стиль
-legend {
+
+.form-contest legend {
   text-align: center;
 
 }
 
 @media (min-width: 660px) {
-
+  .form-contest {
+    margin-bottom: 89px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .form-contest__control {
     display: flex;
     justify-content: space-between;
@@ -72,25 +76,24 @@ legend {
 
   .form-contest__button {
     margin: 0;
+    padding: 15px 56px 17px 58px;
   }
   .form-contest__required{
     margin: 0;
   }
 
+}
 
+@media (min-width: 960px) {
 
-//временные стили
-  /*fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    border: solid 2px #e5e5e5;
-  }*/
+.form-contest {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  legend {
-    text-align: center;
-
-  }
-/////////////////////////////
 }

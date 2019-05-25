@@ -79,20 +79,21 @@
 
       <section class="info-form info-form--name">
         <div class="info-form__wrap">
-          <label for="family" class="info-form__name">Фамилия:<input class="info-form__field" type="text" name="family" id="family" placeholder="Укажите фамилию *" required></label>
+          <label for="family" class="info-form__name info-form__name--nickname">Фамилия:<input class="info-form__field" type="text" name="family" id="family" placeholder="Укажите фамилию *" required></label>
 
-          <label for="name" class="info-form__name">Имя: <input class="info-form__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required></label>
+          <label for="name" class="info-form__name info-form__name--nickname">Имя: <input class="info-form__field" type="text" name="name" id="name" placeholder="Введите ваше имя *" required></label>
 
-          <label for="patronymic" class="info-form__name">Отчество:<input class="info-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"></label>
+          <label for="patronymic" class="info-form__name info-form__name--nickname">Отчество:<input class="info-form__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"></label>
         </div>
       </section>
 
       <section class="form-chek form-chek--progress">
-        <div class="form-chek__wrap">
+        <div class="form-chek__wrap--progress">
           <fieldset class="form-chek__form-block">
-            <legend>
+            <legend class="form-chek__legend-progress">
               <h3 class="form-chek__title">Ваши безбашенные достижения в путешествии</h3>
             </legend>
+            <div class="form-chek__block-progress">
             <input class="form-chek__box" type="checkbox" name="shark" id="shark" checked>
             <label class="form-chek__chek" for="shark">Сделал селфи с акулой</label>
 
@@ -110,19 +111,22 @@
 
             <input class="form-chek__box" type="checkbox" name="hotel" id="hotel">
             <label class="form-chek__chek" for="hotel">Разгромил отель</label>
+          </div>
           </fieldset>
         </div>
       </section>
 
       <section class="info-form info-form--contact">
-        <div class="info-form__wrap">
+        <div class="info-form__wrap--contact">
           <fieldset class="info-form__form-block">
-            <legend>
+            <legend class="info-form__legend-contact">
               <h3 class="info-form__title">Контактная информация</h3>
             </legend>
-            <label class="info-form__name info-form__name--phone" for="phone">Номер телефона <input class="info-form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"></label>
+            <div class="info-form__block-contact">
+            <label class="info-form__name info-form__name--contact info-form__name--phone" for="phone">Номер телефона <input class="info-form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста"></label>
 
-            <label class="info-form__name info-form__name--mail" for="email">адрес почты <input class="info-form__field" type="email" name="email" id="email" placeholder="Введите почту *" required></label>
+            <label class="info-form__name info-form__name--contact info-form__name--mail" for="email">адрес почты <input class="info-form__field" type="email" name="email" id="email" placeholder="Введите почту *" required></label>
+          </div>
           </fieldset>
         </div>
       </section>
@@ -130,9 +134,10 @@
       <section class="form-chek form-chek--system">
         <div class="form-chek__wrap">
           <fieldset class="form-chek__form-block">
-            <legend>
+            <legend class="form-chek__legend-system">
               <h3 class="form-chek__title">С каким приложением путешествовали?</h3>
             </legend>
+            <div class="form-chek__block-radio">
 
             <input class="form-chek__box-radio" type="radio" name="system" id="ios" value="system-ios" checked>
             <label class="form-chek__chek-radio" for="ios">Pink для iOS</label>
@@ -142,6 +147,7 @@
 
             <input class="form-chek__box-radio" type="radio" name="system" id="windows" value="system-windows">
             <label class="form-chek__chek-radio" for="windows">Windows Phone</label>
+          </div>
           </fieldset>
         </div>
       </section>

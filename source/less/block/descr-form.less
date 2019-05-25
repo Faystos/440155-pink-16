@@ -1,6 +1,7 @@
 .descr-form {
   text-align: center;
-  margin: 0 auto 35px;
+  margin: 0 auto 35px auto;
+
 }
 
 .descr-form__wrap {
@@ -11,7 +12,8 @@
   font-size: 14px;
   line-height: 2.2;
   color: #283645;
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .descr-form__parag:last-child {
@@ -41,7 +43,21 @@
   }
 }
 @media (min-width: 960px) {
+  .descr-form {
+    max-width: 960px;
+  margin-bottom: 0;
+  }
+  .descr-form__wrap {
+    padding: 92px 100px 72px 100px;
+  }
   .descr-form__parag {
-    width: 760px;
+    width: 700px;
+    display: inline;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .descr-form__parag:last-child {
+    display: inline;
+    padding: 0;
   }
 }

@@ -1,14 +1,40 @@
 .form-chek {
   background-color: #f2f2f2;
-  margin: 0 0 41px;
+  margin: 0 0 41px 0;
+
+  &--progress {
+
+    & legend{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &--system {
+    & legend{
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+
 }
 
 .form-chek__wrap {
-  padding: 39px 20px 0;
+  padding: 39px 20px 10px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  &--progress{
+    padding: 39px 20px 10px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-chek__title {
-  margin: 0 0 42px;
+  margin: 0 auto 42px auto;
   width: 220px;
   align-self: center;
   text-align: center;
@@ -41,11 +67,15 @@
 }
 
 .form-chek__chek-radio {
-  margin: 0 0 32px 34px;
+  margin: 0 0 31px 34px;
 }
 
 .form-chek__chek:last-child {
-  margin-bottom: 47px;
+  margin-bottom: 38px;
+}
+
+.form-chek__chek-radio:last-child {
+    margin-bottom: 22px;
 }
 
 .form-chek__box,
@@ -89,7 +119,7 @@
   border-radius: 50%;
   position: absolute;
   left: -33px;
-  bottom: -13px;
+  bottom: -10.9px;
   position: relative;
 }
 
@@ -106,7 +136,7 @@
   position: absolute;
   // bottom: 13px;
   // left: -50px;
-  bottom: 5.5px;
+  bottom: 8px;
   left: -22px;
   display: inline-block;
   width: 15px;
@@ -119,22 +149,54 @@
   border: none;
   padding: 0;
   margin: 0;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.form-chek__block-progress{
   display: flex;
   flex-direction: column;
 }
+
+.form-chek__block-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+//////////////////////////////
 @media (min-width: 660px) {
   .form-chek {
     background: none;
-    margin: 0 0 67px;
+
 
     &--system {
+      width: 660px;
       order: 2;
+      margin: 0 auto 69px auto;
+
+      & legend {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
 
     &--progress {
+      width: 660px;
       order: 4;
-      margin: 0 0 60px;
+      margin: 0 auto 60px auto;
+
+      & legend {
+        margin: 0 auto 18px auto;
+        text-align: center;
+      }
     }
+  }
+
+  .form-chek__wrap{
+    width: 100%;
   }
 
   .form-chek__chek {
@@ -142,26 +204,25 @@
   }
 
   .form-chek__title {
-    margin: 0;
+    margin: 0 20px;
   }
 
   .form-chek--progress .form-chek__title {
     width: 375px;
   }
 
-  .form-chek--progress legend {
-    margin: 0 0 18px;
-  }
+  // .form-chek--progress legend {
+  //   margin: 0 auto 18px auto;
+  //   text-align: center;
+  // }
 
   .form-chek--system .form-chek__title {
     width: 320px;
   }
 
   .form-chek__form-block {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 53px 10px 14px 59px;
+    width: 100%;
+    padding: 33px 5px 14px 5px;
     border: solid 2px #e5e5e5;
   }
 
@@ -169,17 +230,17 @@
     margin-bottom: 39px;
   }
 
-  .form-chek__form-block {
-    padding: 32px 5px 6px 60px;
-  }
+
 
   .form-chek__wrap {
     padding: 0 20px;
-    margin: -16px 0 0;
+    &--progress {
+      padding: 0 20px;
+    }
   }
 
   .form-chek--system .form-chek__title {
-    margin-bottom: 0;
+    margin: 0 22px;
   }
 
   .form-chek__chek-radio {
@@ -187,7 +248,8 @@
   }
 
   .form-chek__chek-radio::before {
-    left: -19px;
+    left: -21px;
+    bottom: -12px;
   }
 
   .form-chek__chek::before {
@@ -196,18 +258,60 @@
 
   .form-chek__box-radio:checked + .form-chek__chek-radio::after {
     bottom: 6.5px;
-    left: -8px;
+    left: -10px;
   }
 
   .form-chek--system .form-chek__form-block {
-    padding-bottom: 26px;
+    padding-bottom: 35px;
     //margin-bottom: 30px;
   }
+  .form-chek__block-progress{
+    margin-left: 55px;
+  }
+
+  .form-chek__block-radio {
+    margin-left: 55px;
+  }
+
 }
 @media (min-width: 960px) {
   .form-chek {
     &--system {
       width: 431px;
+      margin: 0 0 60px 77px
+    }
+    &--progress {
+      width: 960px;
+      margin: 0 auto;
+
+      & .form-chek__form-block {
+
+      padding: 31px 0 14px 0;
+    }
     }
   }
+
+  .form-chek__wrap {
+    padding: 0;
+
+    &--progress {
+      padding: 0 10px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .form-chek__chek-radio {
+    margin: 1px 0 29px 33px;
+}
+
+.form-chek__block-progress {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+
 }

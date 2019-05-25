@@ -48,17 +48,14 @@
 }
 
 .form-contest__control{
+  width: 320px;
+  margin: 0 auto;
 
   &--wrap {
     padding: 0 20px;
   }
 }
 
-
-.form-contest legend {
-  text-align: center;
-
-}
 
 @media (min-width: 660px) {
   .form-contest {
@@ -67,6 +64,7 @@
     margin-right: auto;
   }
   .form-contest__control {
+    width: 660px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +91,8 @@
   padding: 0;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 }

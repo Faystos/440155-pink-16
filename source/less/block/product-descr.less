@@ -27,11 +27,15 @@
 }
 
 .product-descr__clause:last-of-type {
-  background-image: url("../img/icon/iphone-screen-smile.png");
-  background-repeat: no-repeat;
-  background-position: 50% 141%;
+  background: url("../img/icon/iphone-screen-mobile@1x.png") no-repeat  51% 146%;
+  background-size: 61%;
   padding: 0 0 321px 0;
   margin-bottom: 32px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/icon/iphone-screen-mobile@2x.png");
+
+}
 }
 
 .product-descr__title {
@@ -69,15 +73,16 @@
     content: "";
     background: url(../img/icon/iphone-screen-3-tablet.png) no-repeat 4% 100%;
     background-size: 100%;
-    //margin: 0 30px 0 0;
     position: absolute;
-    //align-self: flex-end;
     width: 268px;
     height: 485px;
     top: -65px;
     left: -299px;
 
-  
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/icon/iphone-screen-3-tablet@2x.png");
+
+  }
 
   }
 

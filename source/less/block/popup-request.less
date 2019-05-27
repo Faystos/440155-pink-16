@@ -1,0 +1,133 @@
+.popup-request {
+width: 100%;
+  text-align: center;
+  padding: 26px 0 0 0;
+  background-color: #ffffff;
+  z-index: 1;
+  min-height: 289px;
+  box-shadow: 0 2px 10px -5px #000000;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 1874px;
+
+}
+
+.popup-request__title {
+  font-size: 18px;
+  line-height: 1.71;
+}
+
+.popup-request__parag {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #283645;
+  margin: 0 0 43px 0;
+  width: 263px;
+}
+
+.popup-request__button {
+  //width: 100%;
+  padding: 50px 0 54px 0;
+  background-color: #e5e5e5;
+
+}
+
+.popup-request__close {
+  align-self: center;
+  font-size: 18px;
+  line-height: 1.67;
+  color:#ffffff;
+  background-color: #2aab6d;
+  border: none;
+  text-transform: uppercase;
+  padding: 14px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 276px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+}
+
+
+@media (min-width: 660px) {
+
+  .popup-request {
+  width: 460px;
+  margin: 0 auto;
+  position: absolute;
+  left: 102px;
+  top: 1640px;
+  padding: 46px 0 0 0;
+  }
+
+  .popup-request__title {
+    font-size: 30px;
+    line-height: 1.33;
+    width: 215px;
+    margin: 0 auto 20px auto;
+  }
+
+  .popup-request__parag  {
+    font-size: 18px;
+    line-height: 1.33;
+    width: 310px;
+    margin: 0 auto 44px auto;
+  }
+
+  .popup-request__button {
+    width: 100%;
+    padding: 50px 0 54px 0;
+    background-color: #e5e5e5;
+
+  }
+
+  .popup-request__close {
+    min-width: 295px;
+    margin: 0 auto;
+  }
+}
+
+  @media (min-width: 960px) {
+
+    .popup-request {
+    width: 780px;
+    margin: 0 auto;
+    position: absolute;
+    left: 230px;
+    top:1007px;
+    }
+
+    .popup-request__title {
+      font-size: 30px;
+      line-height: 1.33;
+    }
+
+    .popup-request__parag  {
+      font-size: 18px;
+      line-height: 1.33;
+      width: 378px;
+      margin: 0 auto 62px auto;
+    }
+
+    .popup-request__button {
+      width: 100%;
+      height: 163px;
+      background-color: #e5e5e5;
+      padding: 49px 0 0 0;
+    }
+
+    .popup-request__close {
+      min-width: 456px;
+      margin: 0 auto;
+    }
+  }

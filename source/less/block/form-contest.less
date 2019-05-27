@@ -40,6 +40,10 @@
    text-transform: uppercase;
    margin: 0 auto 0 48px;
   //width: 68%;
+
+  & span {
+    display: none;
+  }
 }
 
 .form-contest__required::before{
@@ -74,7 +78,8 @@
 
   .form-contest__button {
     margin: 0;
-    padding: 15px 56px 17px 58px;
+    width: 300px;
+    padding: 15px 5px 17px 5px;
   }
   .form-contest__required{
     margin: 0;
@@ -93,6 +98,18 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+}
+.form-contest__required {
+  & span {
+    display: inline;
+  }
+}
+.form-contest__control {
+  width: 960px;
+
+  &--wrap {
+    padding: 0 10px;
+  }
 }
 
 }

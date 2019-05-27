@@ -54,7 +54,7 @@
   margin: 5px 0 0 -20px;
   outline: none;
   border: solid 2px #e5e5e5;
-  letter-spacing: 0.5px;
+  //letter-spacing: 0.5px;
 
   &:hover {
     border: solid 2px #283645;
@@ -78,11 +78,34 @@
   display: none;
 }
 
-.info-form__field[placeholder] {
+.info-form__field {
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
+
+  &::-webkit-input-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+
+  &:-moz-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+  &::-moz-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+  &:-ms-input-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
 }
+
 
 .info-form__block-contact {
   display: flex;

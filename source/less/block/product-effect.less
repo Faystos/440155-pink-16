@@ -4,7 +4,8 @@
 @media (min-width: 660px) {
   .product-effect {
     display: block;
-    margin: 0 0 75px;
+    // width: 660px;
+    // margin: 0 auto 75px auto ;
   }
 
   .product-effect__wrap {
@@ -12,6 +13,8 @@
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    width: 660px;
+    margin: 0 auto 75px auto ;
   }
 
   .product-effect__descr {
@@ -80,24 +83,27 @@
 @media (min-width: 960px) {
   .product-effect {
     background-color: #f2f2f2;
-    padding-top: 59px;
+    padding-top: 35px;
     padding-bottom: 53px;
     margin: 0;
   }
 
   .product-effect__wrap {
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto 0 auto ;
   }
 
   .product-effect__time-block {
     width: 298px;
     height: 345px;
-    margin-left: 128px;
-    margin-top: 17px;
-    margin-right: 1%;
+    margin: 0;
+    left: 18px;
   }
 
   .product-effect__time-block svg {
+    position: relative;
     top: -13px;
     left: -15px;
     width: 298px;
@@ -115,7 +121,7 @@
 
   .product-effect__descr {
     padding: 2px;
-    margin: 0 0 0 3%;
+    margin: 0 35px 16px 0;
   }
 
   .product-effect__title {

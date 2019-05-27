@@ -1,5 +1,5 @@
 .product-descr {
-  padding: 81px 0 0 0;
+  padding: 83px 0 0 0;
   background-color: #f2f2f2;
   background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
   background-size: 100% 32px;
@@ -23,14 +23,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 36px auto;
 }
 
 .product-descr__clause:last-of-type {
   background-image: url("../img/icon/iphone-screen-smile.png");
   background-repeat: no-repeat;
-  background-position: 50% 139%;
-  padding: 0 0 319px 0;
+  background-position: 50% 141%;
+  padding: 0 0 321px 0;
+  margin-bottom: 32px;
 }
 
 .product-descr__title {
@@ -57,32 +58,44 @@
 
   .product-descr {
   display: flex;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 9px 20px;
   background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
   background-size: 100% 50px;
   background-repeat: no-repeat;
-  margin: 0 0 58px 0;
+  margin: 0 auto 58px auto;
 
   }
-  .product-descr:before {
-    content: url(../img/icon/iphone-screen-3-tablet.png);
-    margin: 0 40px -5px 0;
-    align-self: flex-end;
+  .product-descr__list:before {
+    content: "";
+    background: url(../img/icon/iphone-screen-3-tablet.png) no-repeat 4% 100%;
+    background-size: 100%;
+    //margin: 0 30px 0 0;
+    position: absolute;
+    //align-self: flex-end;
+    width: 268px;
+    height: 485px;
+    top: -65px;
+    left: -299px;
+
+  
+
   }
 
 
   .product-descr__list {
-    min-width: 100%;
-    margin: 65px 0 0 0;
+    width: 320px;
+    margin: 65px auto 0 auto;
+    align-self: flex-end;
+    position: relative;
 
   }
 
   .product-descr__clause {
-    width: 320px;
+    width: 100%;
     text-align: left;
     align-items: flex-start;
-    padding: 5px 1px 5px 1px;
-    margin: 0 0 25px 0;
+    padding: 10px 1px 5px 9px;
+    margin: 0 0 26px 0;
 
   }
 
@@ -93,11 +106,12 @@
 
   .product-descr__clause:last-of-type {
     background: none;
-    padding: 6px 1px 5px 1px;
+    padding: 6px 1px 5px 12px;
 
   }
   .product-descr__wrap {
-    padding: 0;
+    width: 660px;
+    padding: 0 0 0 300px;
   }
 
   .product-descr__title {
@@ -112,39 +126,62 @@
       margin: 0 0 -1px 0;
     }
 
-    .product-descr:before {
+    .product-descr:before,
+    .product-descr__list:before {
       content: "";
       margin: 0;
+      background: none;
+      display: none;
     }
 
+    .product-descr__wrap {
+      width: 960px;
+      padding: 0 ;
+      margin: 0 auto;
+    }
+
+
     .product-descr__list {
+      width: 100%;
       display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
       margin: -6px 0 0 0;
+      padding: 0 0 0 0;
     }
 
     .product-descr__clause {
-      width: 240px;
+      width: 310px;
       text-align: center;
-      margin: 0 42px 0 39px;
+      margin: -7px 10px 0 auto;
     }
 
     .product-descr__title{
+      width: 240px;
       font-size: 30px;
       line-height: 1;
-      margin: 0 0 23px 0;
+      margin: 0 auto 23px 30px;
     }
 
     .product-descr__parag{
+        width: 238px;
       font-size: 18px;
       line-height: 1.67;
       text-align: center;
+      margin: 0 auto 0 auto;
     }
 
     .product-descr__image{
       display: block;
-      margin: 0 auto 57px auto;
+      margin: 0 auto 60px auto;
       overflow: hidden;
       height: 300px;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
     }
 
 

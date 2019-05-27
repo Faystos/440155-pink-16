@@ -17,7 +17,7 @@
 
 .form-emotions__text{
   width: 100%;
-  height: 200px;
+  height: 204px;
   //height: 100%;
   border: solid 2px #e5e5e5;
   padding: 15px 15px 5px 19px;
@@ -25,12 +25,34 @@
   resize: none;
 }
 
-.form-emotions__text[placeholder] {
+.form-emotions__text {
   font-family:  Open Sans;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
-  //letter-spacing: 0.4px;
+
+  &::-webkit-input-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+
+  &:-moz-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+  &::-moz-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+  &:-ms-input-placeholder{
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
+
 }
 
 .form-emotions__form-block {
@@ -58,12 +80,12 @@
 
   .form-emotions__form-block{
     padding: 20px 58px 50px 58px;
-    height: 305px;
+    height: 309px;
     border: solid 2px #e5e5e5;
 
   }
   .form-emotions__text {
-    height: 189px;
+    height: 194px;
     padding: 12px 10px 5px 18px;
   }
 
@@ -71,4 +93,22 @@
     margin:0 auto 13px auto;
   }
 
+}
+
+@media (min-width: 960px) {
+  .form-emotions{
+    width: 960px;
+  }
+
+  .form-emotions__wrap {
+    padding: 0 10px;
+  }
+
+  .form-emotions__form-block{
+    height: 232px;
+  }
+
+  .form-emotions__text {
+    height: 124px;
+  }
 }

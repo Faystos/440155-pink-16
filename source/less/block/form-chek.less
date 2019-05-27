@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   margin: 0 0 41px 0;
 
+
   &--progress {
 
     & legend{
@@ -173,7 +174,7 @@
 
 
     &--system {
-      width: 660px;
+    //  width: 660px;
       order: 2;
       margin: 0 auto 69px auto;
 
@@ -184,7 +185,7 @@
     }
 
     &--progress {
-      width: 660px;
+      //width: 660px;
       order: 4;
       margin: 0 auto 60px auto;
 
@@ -196,7 +197,10 @@
   }
 
   .form-chek__wrap{
-    width: 100%;
+    width:  660px;
+    &--progress {
+      width:  660px;
+    }
   }
 
   .form-chek__chek {
@@ -276,25 +280,30 @@
 }
 @media (min-width: 960px) {
   .form-chek {
+width: 960px;
+margin: 0 auto;
     &--system {
       width: 431px;
       margin: 0 0 60px 77px
     }
     &--progress {
-      width: 960px;
-      margin: 0 auto;
+      //width: 960px;
+      margin: 0 auto 58px auto;
 
       & .form-chek__form-block {
 
-      padding: 31px 0 14px 0;
+      padding: 31px 0 8px 61px;
+
     }
     }
   }
 
   .form-chek__wrap {
     padding: 0;
+    width: 431px;
 
     &--progress {
+        width: 960px;
       padding: 0 10px;
       margin: 0 auto;
       width: 100%;
@@ -308,9 +317,32 @@
 .form-chek__block-progress {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
   margin: 0;
+}
+
+.form-chek__chek {
+  width: 200px;
+  margin: 0 49px 52px 56px;
+
+
+  &:nth-of-type(2n){
+    order: 2;
+  }
+  &:nth-of-type(2n+1){
+    order: 1;
+  }
+
+    &:nth-of-type(5){
+      width: 150px;
+    }
+    &:nth-of-type(6){
+      width: 150px;
+    }
+
+
 }
 
 

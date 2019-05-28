@@ -1,24 +1,20 @@
 .form-chek {
   background-color: #f2f2f2;
-  margin: 0 0 41px 0;
-
+  margin: 0 0 41px;
 
   &--progress {
-
-    & legend{
+    & legend {
       text-align: center;
       margin: 0 auto;
     }
   }
 
   &--system {
-    & legend{
+    & legend {
       text-align: center;
       margin: 0 auto;
     }
   }
-
-
 }
 
 .form-chek__wrap {
@@ -26,7 +22,8 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  &--progress{
+
+  &--progress {
     padding: 39px 20px 10px;
     width: 320px;
     margin-left: auto;
@@ -35,7 +32,7 @@
 }
 
 .form-chek__title {
-  margin: 0 auto 42px auto;
+  margin: 0 auto 42px;
   width: 220px;
   align-self: center;
   text-align: center;
@@ -76,7 +73,7 @@
 }
 
 .form-chek__chek-radio:last-child {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .form-chek__box,
@@ -154,7 +151,7 @@
   // flex-direction: column;
 }
 
-.form-chek__block-progress{
+.form-chek__block-progress {
   display: flex;
   flex-direction: column;
 }
@@ -163,20 +160,15 @@
   display: flex;
   flex-direction: column;
 }
-
-
-
-
 //////////////////////////////
 @media (min-width: 660px) {
   .form-chek {
     background: none;
 
-
     &--system {
-    //  width: 660px;
+      //  width: 660px;
       order: 2;
-      margin: 0 auto 69px auto;
+      margin: 0 auto 69px;
 
       & legend {
         margin: 0 auto;
@@ -187,19 +179,20 @@
     &--progress {
       //width: 660px;
       order: 4;
-      margin: 0 auto 60px auto;
+      margin: 0 auto 60px;
 
       & legend {
-        margin: 0 auto 18px auto;
+        margin: 0 auto 18px;
         text-align: center;
       }
     }
   }
 
-  .form-chek__wrap{
-    width:  660px;
+  .form-chek__wrap {
+    width: 660px;
+
     &--progress {
-      width:  660px;
+      width: 660px;
     }
   }
 
@@ -214,19 +207,17 @@
   .form-chek--progress .form-chek__title {
     width: 375px;
   }
-
   // .form-chek--progress legend {
   //   margin: 0 auto 18px auto;
   //   text-align: center;
   // }
-
   .form-chek--system .form-chek__title {
     width: 320px;
   }
 
   .form-chek__form-block {
     width: 100%;
-    padding: 33px 5px 14px 5px;
+    padding: 33px 5px 14px;
     border: solid 2px #e5e5e5;
   }
 
@@ -234,10 +225,9 @@
     margin-bottom: 39px;
   }
 
-
-
   .form-chek__wrap {
     padding: 0 20px;
+
     &--progress {
       padding: 0 20px;
     }
@@ -269,32 +259,32 @@
     padding-bottom: 35px;
     //margin-bottom: 30px;
   }
-  .form-chek__block-progress{
+
+  .form-chek__block-progress {
     margin-left: 55px;
   }
 
   .form-chek__block-radio {
     margin-left: 55px;
   }
-
 }
 @media (min-width: 960px) {
   .form-chek {
-width: 960px;
-margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
+
     &--system {
       width: 431px;
-      margin: 0 0 60px 77px
+      margin: 0 0 60px 77px;
     }
+
     &--progress {
       //width: 960px;
-      margin: 0 auto 58px auto;
+      margin: 0 auto 58px;
 
       & .form-chek__form-block {
-
-      padding: 31px 0 8px 61px;
-
-    }
+        padding: 31px 0 8px 61px;
+      }
     }
   }
 
@@ -303,7 +293,7 @@ margin: 0 auto;
     width: 431px;
 
     &--progress {
-        width: 960px;
+      width: 960px;
       padding: 0 10px;
       margin: 0 auto;
       width: 100%;
@@ -312,38 +302,35 @@ margin: 0 auto;
 
   .form-chek__chek-radio {
     margin: 1px 0 29px 33px;
-}
-
-.form-chek__block-progress {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  align-content: center;
-  margin: 0;
-}
-
-.form-chek__chek {
-  width: 200px;
-  margin: 0 49px 52px 56px;
-
-
-  &:nth-of-type(2n){
-    order: 2;
-  }
-  &:nth-of-type(2n+1){
-    order: 1;
   }
 
-    &:nth-of-type(5){
-      width: 150px;
+  .form-chek__block-progress {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    margin: 0;
+  }
+
+  .form-chek__chek {
+    width: 200px;
+    margin: 0 49px 52px 56px;
+
+    &:nth-of-type(2n) {
+      order: 2;
     }
-    &:nth-of-type(6){
+
+    &:nth-of-type(2n+1) {
+      order: 1;
+    }
+
+    &:nth-of-type(5) {
       width: 150px;
     }
 
-
-}
-
-
+    &:nth-of-type(6) {
+      width: 150px;
+    }
+  }
 }

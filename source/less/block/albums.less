@@ -144,12 +144,12 @@
 @media (min-width: 660px) {
   .albums-comment {
     width: 300px;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     padding: 0;
 
     &--ponorama {
       width: 620px;
-      margin: 0 auto 50px auto;
+      margin: 0 auto 50px;
       padding: 0 0 3px;
     }
   }
@@ -210,7 +210,7 @@
       align-items: center;
       order: 2;
       width: 119px;
-      margin: 0 24px 0 0px;
+      margin: 0 24px 0 0;
       // padding: 0 ;
       // position: absolute;
       // bottom: 72px;
@@ -251,61 +251,57 @@
     }
   }
 }
-  /////////////////////////////////////////////////////////
-  @media (min-width: 960px) {
+/////////////////////////////////////////////////////////
+@media (min-width: 960px) {
+  .albums__wrap {
+    padding: 0;
+  }
 
-    .albums__wrap {
-      padding: 0;
-    }
+  .albums__list-photo {
+    max-width: 960px;
+    padding: 0;
+    margin-bottom: -40px;
+  }
 
-    .albums__list-photo {
-      max-width: 960px;
-      padding: 0;
-      margin-bottom: -40px;
-    }
+  .albums-comment {
+    margin-bottom: 54px;
+    margin-left: auto;
+    margin-right: auto;
 
-    .albums-comment {
-      margin-bottom: 54px;
+    &--ponorama {
+      width: 940px;
       margin-left: auto;
       margin-right: auto;
-
-      &--ponorama {
-        width: 940px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 52px;
-      }
+      margin-bottom: 52px;
     }
-
-
-    .albums-comment__ponorama {
-      height: 506px;
-    }
-
-    .albums-comment__photo {
-      height: 400px;
-    }
-
-
-    .albums-comment__buttom-ponorama {
-      top: 54px;
-      right: 0;
-    }
-
-    .albums-comment__parag--ponorama {
-        width: 100%;
-        display: inline;
-      }
-
-      .albums-comment__block-author {
-        padding: 0 5px 22px 27px;
-
-        &--ponorama {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          padding: 0 5px 16px 27px;
-        }
-      }
-
   }
+
+  .albums-comment__ponorama {
+    height: 506px;
+  }
+
+  .albums-comment__photo {
+    height: 400px;
+  }
+
+  .albums-comment__buttom-ponorama {
+    top: 54px;
+    right: 0;
+  }
+
+  .albums-comment__parag--ponorama {
+    width: 100%;
+    display: inline;
+  }
+
+  .albums-comment__block-author {
+    padding: 0 5px 22px 27px;
+
+    &--ponorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 5px 16px 27px;
+    }
+  }
+}

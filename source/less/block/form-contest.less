@@ -1,10 +1,9 @@
 .form-contest {
- display: flex;
- flex-direction: column;
- //align-items: center;
- margin: 0 auto 57px auto;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  margin: 0 auto 57px;
 }
-
 
 .form-contest__button {
   font-family: Open Sans;
@@ -12,21 +11,23 @@
   font-size: 18px;
   line-height: 1.67;
   font-weight: 700;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #2aab6d;
   border: none;
   text-transform: uppercase;
   padding: 15px 46px 17px 48px;
   border-radius: 5px;
-  margin: -5px 0 35px 0;
+  margin: -5px 0 35px;
   cursor: pointer;
 
   &:hover {
     background-color: #1c9b5e;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
   &:disabled {
     color: #ffffff;
     background-color: #e5e5e5;
@@ -37,22 +38,21 @@
   //align-self: center;
   font-size: 14px;
   line-height: 2.14;
-   color: #283645;
-   text-transform: uppercase;
-   margin: 0 auto 0 48px;
+  color: #283645;
+  text-transform: uppercase;
+  margin: 0 auto 0 48px;
   //width: 68%;
-
   & span {
     display: none;
   }
 }
 
-.form-contest__required::before{
+.form-contest__required::before {
   content: "* ";
   color: #d22856;
 }
 
-.form-contest__control{
+.form-contest__control {
   width: 320px;
   margin: 0 auto;
 
@@ -60,14 +60,13 @@
     padding: 0 20px;
   }
 }
-
-
 @media (min-width: 660px) {
   .form-contest {
     margin-bottom: 89px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .form-contest__control {
     width: 660px;
     display: flex;
@@ -80,37 +79,36 @@
   .form-contest__button {
     margin: 0;
     width: 300px;
-    padding: 15px 5px 17px 5px;
+    padding: 15px 5px 17px;
   }
-  .form-contest__required{
+
+  .form-contest__required {
     margin: 0;
   }
-
 }
-
 @media (min-width: 960px) {
-
-.form-contest {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.form-contest__required {
-  & span {
-    display: inline;
+  .form-contest {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
   }
-}
-.form-contest__control {
-  width: 960px;
 
-  &--wrap {
-    padding: 0 10px;
+  .form-contest__required {
+    & span {
+      display: inline;
+    }
   }
-}
 
+  .form-contest__control {
+    width: 960px;
+
+    &--wrap {
+      padding: 0 10px;
+    }
+  }
 }

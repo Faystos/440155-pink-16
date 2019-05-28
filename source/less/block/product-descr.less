@@ -1,10 +1,9 @@
 .product-descr {
-  padding: 83px 0 0 0;
+  padding: 83px 0 0;
   background-color: #f2f2f2;
   background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
   background-size: 100% 32px;
   background-repeat: no-repeat;
-
 }
 
 .product-descr__wrap {
@@ -23,24 +22,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 36px auto;
+  margin: 0 auto 36px;
 }
 
 .product-descr__clause:last-of-type {
-  background: url("../img/icon/iphone-screen-mobile@1x.png") no-repeat  51% 146%;
+  background: url("../img/icon/iphone-screen-mobile@1x.png") no-repeat 51% 146%;
   background-size: 61%;
-  padding: 0 0 321px 0;
+  padding: 0 0 321px;
   margin-bottom: 32px;
-
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/icon/iphone-screen-mobile@2x.png");
-
-}
+  }
 }
 
 .product-descr__title {
   font-size: 18px;
-  margin: 0 auto 14px auto;
+  margin: 0 auto 14px;
 }
 
 .product-descr__parag {
@@ -56,43 +53,36 @@
 .product-descr__image {
   display: none;
 }
-
 //////////////////////////////////////////////////
 @media (min-width: 660px) {
-
   .product-descr {
-  display: flex;
-  padding: 0 20px 9px 20px;
-  background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
-  background-size: 100% 50px;
-  background-repeat: no-repeat;
-  margin: 0 auto 58px auto;
-
+    display: flex;
+    padding: 0 20px 9px;
+    background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+    margin: 0 auto 58px;
   }
+
   .product-descr__list:before {
     content: "";
-    background: url(../img/icon/iphone-screen-3-tablet.png) no-repeat 4% 100%;
+    background: url("../img/icon/iphone-screen-3-tablet.png") no-repeat 4% 100%;
     background-size: 100%;
     position: absolute;
     width: 268px;
     height: 485px;
     top: -65px;
     left: -299px;
-
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/icon/iphone-screen-3-tablet@2x.png");
-
+    }
   }
-
-  }
-
 
   .product-descr__list {
     width: 320px;
-    margin: 65px auto 0 auto;
+    margin: 65px auto 0;
     align-self: flex-end;
     position: relative;
-
   }
 
   .product-descr__clause {
@@ -100,8 +90,7 @@
     text-align: left;
     align-items: flex-start;
     padding: 10px 1px 5px 9px;
-    margin: 0 0 26px 0;
-
+    margin: 0 0 26px;
   }
 
   .product-descr__parag {
@@ -112,83 +101,77 @@
   .product-descr__clause:last-of-type {
     background: none;
     padding: 6px 1px 5px 12px;
-
   }
+
   .product-descr__wrap {
     width: 660px;
     padding: 0 0 0 300px;
   }
 
   .product-descr__title {
-    margin: 0 0 14px 0;
+    margin: 0 0 14px;
   }
 }
+@media (min-width: 960px) {
+  .product-descr {
+    background-size: 100% 90px;
+    overflow: hidden;
+    margin: 0 0 -1px;
+  }
 
-  @media (min-width: 960px) {
-    .product-descr{
-      background-size: 100% 90px;
-      overflow: hidden;
-      margin: 0 0 -1px 0;
-    }
+  .product-descr:before,
+  .product-descr__list:before {
+    content: "";
+    margin: 0;
+    background: none;
+    display: none;
+  }
 
-    .product-descr:before,
-    .product-descr__list:before {
-      content: "";
-      margin: 0;
-      background: none;
-      display: none;
-    }
+  .product-descr__wrap {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-    .product-descr__wrap {
-      width: 960px;
-      padding: 0 ;
-      margin: 0 auto;
-    }
+  .product-descr__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: -6px 0 0;
+    padding: 0;
+  }
 
+  .product-descr__clause {
+    width: 310px;
+    text-align: center;
+    margin: -7px 10px 0 auto;
+  }
 
-    .product-descr__list {
+  .product-descr__title {
+    width: 240px;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 auto 23px 30px;
+  }
+
+  .product-descr__parag {
+    width: 238px;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .product-descr__image {
+    display: block;
+    margin: 0 auto 60px;
+    overflow: hidden;
+    height: 300px;
+
+    & img {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-
-      margin: -6px 0 0 0;
-      padding: 0 0 0 0;
+      height: auto;
     }
-
-    .product-descr__clause {
-      width: 310px;
-      text-align: center;
-      margin: -7px 10px 0 auto;
-    }
-
-    .product-descr__title{
-      width: 240px;
-      font-size: 30px;
-      line-height: 1;
-      margin: 0 auto 23px 30px;
-    }
-
-    .product-descr__parag{
-        width: 238px;
-      font-size: 18px;
-      line-height: 1.67;
-      text-align: center;
-      margin: 0 auto 0 auto;
-    }
-
-    .product-descr__image{
-      display: block;
-      margin: 0 auto 60px auto;
-      overflow: hidden;
-      height: 300px;
-
-      & img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-
-
+  }
 }

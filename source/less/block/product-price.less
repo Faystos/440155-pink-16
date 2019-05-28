@@ -118,6 +118,15 @@
   background-color: #283645;
   border-radius: 50%;
   margin: 0 10px 0 8px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .product-price__btn:nth-of-type(1):checked~.product-price__slider .product-price__control:nth-of-type(1),
@@ -162,7 +171,7 @@
   .product-price {
     background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
     background-size: 100% 50px;
-    padding: 85px 0 69px 0;
+    padding: 85px 0 69px;
   }
 
   .product-price__wrap {
@@ -246,7 +255,7 @@
   .product-price {
     //background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
     background-size: 100% 80px;
-    padding: 147px 0 92px 0;
+    padding: 147px 0 92px;
   }
 
   .product-price__wrap {
@@ -288,6 +297,6 @@
 
   .product-price__check {
     top: 22px;
-    right: 101px
+    right: 101px;
   }
 }

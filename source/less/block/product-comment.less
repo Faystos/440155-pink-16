@@ -1,15 +1,14 @@
 .product-comment {
-  padding: 0 0 5px 0;
-  margin: 0 0 37px 0;
-
+  padding: 0 0 5px;
+  margin: 0 0 37px;
 }
 
 .product-comment__slider {
   display: none;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px 0 20px;
-  margin: 0 0 20px 0;
+  padding: 10px 20px 0;
+  margin: 0 0 20px;
 }
 
 .product-comment__title {
@@ -63,6 +62,15 @@
   background-color: #283645;
   border-radius: 50%;
   margin: 0 10px 0 8px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .product-comment__btn:nth-of-type(1):checked~.product-comment__btns .product-comment__btns-conrol:nth-of-type(1),
@@ -84,17 +92,17 @@
   display: flex;
 }
 ////////////////////////////////////////////////////////////////////////////
-@media (min-width: 660px){
+@media (min-width: 660px) {
   .product-comment {
     width: 660px;
-    margin: 0 auto 16px auto;
-
+    margin: 0 auto 16px;
   }
 
   .product-comment__info {
     display: inline;
   }
-  .product-comment__slider{
+
+  .product-comment__slider {
     flex-direction: column-reverse;
     margin-bottom: 35px;
   }
@@ -103,6 +111,7 @@
     font-size: 20px;
     order: 1;
   }
+
   .product-comment__quote {
     order: 2;
   }
@@ -112,43 +121,42 @@
     font-size: 18px;
     line-height: 1.67;
     color: #283645;
-    margin: 0 0 16px 0;
+    margin: 0 0 16px;
+  }
+}
+@media (min-width: 960px) {
+  .product-comment {
+    width: 960px;
+    margin: 0 auto;
+    padding: 159px 0 41px;
+    position: relative;
   }
 
-}
-
-@media (min-width: 960px) {
-    .product-comment{
-      width: 960px;
-      margin: 0 auto;
-      padding: 159px 0 41px 0;
-      position: relative;
-    }
-
-    .product-comment:before {
-      content: "";
-      width: 79px;
-      height: 63px;
-      background: url(../img/icon/quotes-svg.svg) no-repeat 50% 100%;
-      position: absolute;
-      top: 73px;
-      left: 444px;
-      opacity: 0.1;
-    }
+  .product-comment:before {
+    content: "";
+    width: 79px;
+    height: 63px;
+    background: url("../img/icon/quotes-svg.svg") no-repeat 50% 100%;
+    position: absolute;
+    top: 73px;
+    left: 444px;
+    opacity: 0.1;
+  }
 
   .product-comment__parag {
     width: 690px;
   }
 
-  .product-comment__title{
+  .product-comment__title {
     font-size: 24px;
-    margin: 0 0 -3px 0;
+    margin: 0 0 -3px;
   }
 
-  .product-comment__info{
+  .product-comment__info {
     font-size: 18px;
     line-height: 1.67;
   }
+
   .product-comment__btns {
     display: none;
   }
@@ -168,27 +176,28 @@
     background-color: transparent;
     border: none;
     opacity: 0.3;
-    cursor:  pointer;
+    cursor: pointer;
     outline: none;
 
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.1;
     }
   }
 
   .product-comment__left {
-    background: url(../img/icon/left-arrow-svg.svg) 50% 100% no-repeat;
+    background: url("../img/icon/left-arrow-svg.svg") 50% 100% no-repeat;
     background-size: 100%;
     position: absolute;
     top: 212px;
-    left: 10px;;
+    left: 10px;
   }
 
   .product-comment__right {
-    background: url(../img/icon/right-arrow-svg.svg) 50% 100% no-repeat;
+    background: url("../img/icon/right-arrow-svg.svg") 50% 100% no-repeat;
     background-size: 100%;
     transform: rotate(180deg);
     position: absolute;

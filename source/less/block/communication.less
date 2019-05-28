@@ -96,6 +96,7 @@
   width: 100%;
   position: absolute;
   top: -167px;
+  z-index: 3;
 }
 
 .communication__map::before {
@@ -106,6 +107,11 @@
   position: absolute;
   left: 45%;
   bottom: 35%;
+  z-index: 1;
+}
+
+.communication__map iframe {
+  z-index: 2;
 }
 @media (min-width: 660px) {
   .communication {}
@@ -172,6 +178,7 @@
     position: absolute;
     top: -59px;
     background-size: 100%;
+    // z-index: 1;
   }
 
   .communication__map::before {
@@ -255,6 +262,7 @@
     position: absolute;
     top: -18px;
     background-size: 100%;
+    // z-index: 1;
   }
 
   .communication__map::before {

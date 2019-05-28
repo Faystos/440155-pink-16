@@ -19,10 +19,6 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.photo-edit__casting,
-.photo-edit__contrast {
   display: none;
 }
 
@@ -51,6 +47,16 @@
   &:hover {
     background-color: #d22856;
   }
+}
+
+.photo-edit__casting .photo-edit__toggle {
+  top: -6px;
+  right: 182px;
+}
+
+.photo-edit__contrast .photo-edit__toggle {
+  top: -6px;
+  right: 110px;
 }
 
 .photo-edit__your-photo {
@@ -128,6 +134,17 @@
     opacity: 0.3;
   }
 }
+
+.photo-edit__icon-setting {
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.active {
+  display: block;
+  fill:#d22856;
+}
 /////////////////////////////////
 @media (min-width: 660px) {
   .photo-edit {
@@ -151,6 +168,7 @@
     padding: 19px 0 0 54px;
     position: relative;
     margin: 0 0 17px;
+    display: block;
   }
 
   .photo-edit__bar {
@@ -176,10 +194,10 @@
     right: 110px;
   }
 
-  .photo-edit__casting,
-  .photo-edit__contrast {
-    display: block;
-  }
+  // .photo-edit__casting,
+  // .photo-edit__contrast {
+  //   display: block;
+  // }
 
   .photo-edit__settings {
     display: none;

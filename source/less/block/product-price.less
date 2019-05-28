@@ -16,7 +16,7 @@
 .product-price__list {
   border-collapse: collapse;
   width: 300%;
-  margin: 0 0 40px;
+  margin: 0 0 40px 0;
 }
 
 .product-price__descr {
@@ -29,8 +29,6 @@
 
 .product-price__column {
   background-color: #ffffff;
-  //height: 59px;
-  border: solid 2px #e5e5e5;
 }
 
 .product-price__btn {
@@ -55,7 +53,6 @@
 }
 
 .product-price__clause {
-  //height: 59px;
   font-size: 14px;
   line-height: 2.14;
   color: #283645;
@@ -68,10 +65,8 @@
 }
 
 .product-price__not-text {
-  //display: inline-block;
   width: 140px;
   margin: 0;
-  //vertical-align: middle;
 }
 
 .product-price__slider-btns {
@@ -82,16 +77,6 @@
   justify-content: center;
   align-items: center;
 }
-// .product-price__control {
-//   content: "";
-//   display: inline-block;
-//   width: 6px;
-//   height: 6px;
-//   opacity: 0.3;
-//   background-color: #283645;
-//   border-radius: 50%;
-//   margin: 0 9px;
-// }
 
 .product-price__not-check {
   position: absolute;
@@ -132,14 +117,6 @@
 .product-price__btn:nth-of-type(1):checked~.product-price__slider .product-price__control:nth-of-type(1),
 .product-price__btn:nth-of-type(2):checked~.product-price__slider .product-price__control:nth-of-type(2),
 .product-price__btn:nth-of-type(3):checked~.product-price__slider .product-price__control:nth-of-type(3) {
-  // content: "";
-  // display: inline-block;
-  // width: 6px;
-  // height: 6px;
-  // border: solid 2px #283645;
-  // background-color: #ffffff;
-  // border-radius: 50%;
-  // opacity: 1;
   content: "";
   display: inline-block;
   width: 12px;
@@ -166,12 +143,11 @@
 .product-price__hiden {
   display: none;
 }
-////////////////////////////////////////////////////////////////
 @media (min-width: 660px) {
   .product-price {
     background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
     background-size: 100% 50px;
-    padding: 85px 0 69px;
+    padding: 85px 0 69px 0;
   }
 
   .product-price__wrap {
@@ -229,8 +205,6 @@
     line-height: 1.67;
   }
 
-  .product-price__slider {}
-
   .product-price__control,
   .product-price__slider-btns {
     display: none;
@@ -253,7 +227,6 @@
 }
 @media (min-width: 960px) {
   .product-price {
-    //background-image: linear-gradient(to bottom right, #fff 50%, #f2f2f2 51%);
     background-size: 100% 80px;
     padding: 147px 0 92px;
   }
@@ -298,5 +271,9 @@
   .product-price__check {
     top: 22px;
     right: 101px;
+  }
+
+  .product-comment__slider--1 {
+    display: block;
   }
 }

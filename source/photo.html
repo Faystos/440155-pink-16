@@ -86,7 +86,7 @@
           <li class="nav-list__menu"><a href="index.html" class="nav-list__clause">Главная</a></li>
           <li class="nav-list__menu"><a class="nav-list__clause">Фотографии</a></li>
           <li class="nav-list__menu"><a href="form.html" class="nav-list__clause">Конкурс</a></li>
-          <li class="nav-list__menu"><a href="#" class="nav-list__clause">HTML Academy</a></li>
+          <li class="nav-list__menu"><a href="https://htmlacademy.ru/intensive/adaptive" class="nav-list__clause">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -101,7 +101,6 @@
     <section class="descr-photo">
       <div class="descr-photo__wrap">
         <p class="descr-photo__parag">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?</p>
-        <!--<p class="descr-photo__parag">Видите, как не хватает ваших?</p>-->
       </div>
     </section>
 
@@ -414,23 +413,7 @@
     </div>
   </footer>
 
-  <script>
-    var nav = document.querySelector(".nav");
-    var navButton = document.querySelector(".nav__button");
-
-    nav.classList.remove("nav--nojs");
-
-    navButton.addEventListener('click', function() {
-      if (nav.classList.contains("nav--closed")) {
-        nav.classList.remove("nav--closed");
-        nav.classList.add("nav--opened");
-      } else {
-        nav.classList.add("nav--closed");
-        nav.classList.remove("nav--opened");
-      }
-    });
-  </script>
-
+  <script src="../js/navigation.js"></script>
   <script src="../js/picturefill.js"></script>
 
 </body>

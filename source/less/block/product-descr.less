@@ -62,21 +62,23 @@
     background-size: 100% 50px;
     background-repeat: no-repeat;
     margin: 0 auto 58px;
+    position: relative;
+  }
 
-    &::before {
-      content: "";
-      background: url("../img/icon/iphone-screen-3-tablet.png") no-repeat 4% 100%;
-      background-size: 100%;
-      position: absolute;
-      width: 268px;
-      height: 485px;
-      top: -65px;
-      left: -299px;
+  .product-descr__list::before {
+    content: "";
+    background: url("../img/icon/iphone-screen-3-tablet.png") no-repeat 4% 100%;
+    background-size: 100%;
+    position: absolute;
+    width: 268px;
+    height: 485px;
+    top: -65px;
+    left: -299px;
+    z-index: 1;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/icon/iphone-screen-3-tablet@2x.png");
-      }
-    }
+    // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    //   background-image: url("../img/icon/iphone-screen-3-tablet@2x.png");
+    // }
   }
 
   .product-descr__list {

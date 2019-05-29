@@ -3,7 +3,6 @@
   background-color: #f2f2f2;
   padding: 20px 0 41px;
   margin: 0 0 38px;
-  /*overflow: hidden;*/
 }
 
 .photo-edit__wrap {
@@ -16,7 +15,6 @@
   margin: 0 0 36px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100vw;
-  position: relative;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -39,7 +37,6 @@
   border-radius: 50%;
   position: absolute;
   top: -6px;
-  // right: 75px;
   right: 23.5%;
   cursor: pointer;
 
@@ -115,7 +112,7 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -143,9 +140,9 @@
 
 .active {
   display: block;
-  fill:#d22856;
+  fill: #d22856;
 }
-/////////////////////////////////
+
 @media (min-width: 660px) {
   .photo-edit {
     padding: 57px 0 50px;
@@ -193,11 +190,6 @@
     top: 12px;
     right: 110px;
   }
-
-  // .photo-edit__casting,
-  // .photo-edit__contrast {
-  //   display: block;
-  // }
 
   .photo-edit__settings {
     display: none;
@@ -257,12 +249,11 @@
     left: 7px;
   }
 }
-//////////////////////////////////
+
 @media (min-width: 960px) {
   .photo-edit {
     max-width: 940px;
     margin: 0 auto 100px;
-    // padding-left: 70px;
     padding-bottom: 54px;
     display: flex;
     justify-content: space-around;
@@ -292,7 +283,6 @@
   .photo-edit__block-control {
     width: 100%;
     margin-bottom: 126px;
-    //padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -301,7 +291,6 @@
   .photo-edit__controls {
     width: 410px;
     padding: 19px 0 0 92px;
-    //margin: 0 0 16px 18px;
     margin: 0 0 16px;
     position: relative;
     left: 0;
@@ -349,12 +338,9 @@
   }
 
   .photo-edit__button-controls {
-    // width: 430px;
     width: 100%;
     flex-direction: row;
-    //align-items: flex-end;
     justify-content: space-between;
-    // padding-left: 35px;
   }
 
   .photo-edit__button-controls button {

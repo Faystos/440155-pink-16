@@ -115,7 +115,6 @@
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
   border-radius: 50%;
-  position: absolute;
   left: -33px;
   bottom: -10.9px;
   position: relative;
@@ -132,8 +131,6 @@
 .form-chek__box-radio:checked + .form-chek__chek-radio::after {
   content: "";
   position: absolute;
-  // bottom: 13px;
-  // left: -50px;
   bottom: 8px;
   left: -22px;
   display: inline-block;
@@ -147,8 +144,6 @@
   border: none;
   padding: 0;
   margin: 0;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .form-chek__block-progress {
@@ -160,13 +155,12 @@
   display: flex;
   flex-direction: column;
 }
-//////////////////////////////
+
 @media (min-width: 660px) {
   .form-chek {
     background: none;
 
     &--system {
-      //  width: 660px;
       order: 2;
       margin: 0 auto 69px;
 
@@ -177,7 +171,6 @@
     }
 
     &--progress {
-      //width: 660px;
       order: 4;
       margin: 0 auto 60px;
 
@@ -190,14 +183,20 @@
 
   .form-chek__wrap {
     width: 660px;
+    padding: 0 20px;
 
     &--progress {
       width: 660px;
+      padding: 0 20px;
     }
   }
 
   .form-chek__chek {
     margin: 0 0 52px 58px;
+
+    &::before {
+      left: -59px;
+    }
   }
 
   .form-chek__title {
@@ -207,12 +206,10 @@
   .form-chek--progress .form-chek__title {
     width: 375px;
   }
-  // .form-chek--progress legend {
-  //   margin: 0 auto 18px auto;
-  //   text-align: center;
-  // }
+
   .form-chek--system .form-chek__title {
     width: 320px;
+    margin: 0 22px;
   }
 
   .form-chek__form-block {
@@ -222,32 +219,13 @@
   }
 
   .form-chek__chek-radio {
-    margin-bottom: 39px;
-  }
-
-  .form-chek__wrap {
-    padding: 0 20px;
-
-    &--progress {
-      padding: 0 20px;
-    }
-  }
-
-  .form-chek--system .form-chek__title {
-    margin: 0 22px;
-  }
-
-  .form-chek__chek-radio {
     margin: 0 0 32px 20px;
-  }
+    margin-bottom: 39px;
 
-  .form-chek__chek-radio::before {
-    left: -21px;
-    bottom: -12px;
-  }
-
-  .form-chek__chek::before {
-    left: -59px;
+    &::before {
+      left: -21px;
+      bottom: -12px;
+    }
   }
 
   .form-chek__box-radio:checked + .form-chek__chek-radio::after {
@@ -257,7 +235,6 @@
 
   .form-chek--system .form-chek__form-block {
     padding-bottom: 35px;
-    //margin-bottom: 30px;
   }
 
   .form-chek__block-progress {
@@ -268,6 +245,7 @@
     margin-left: 55px;
   }
 }
+
 @media (min-width: 960px) {
   .form-chek {
     width: 960px;
@@ -279,7 +257,6 @@
     }
 
     &--progress {
-      //width: 960px;
       margin: 0 auto 58px;
 
       & .form-chek__form-block {
@@ -296,7 +273,6 @@
       width: 960px;
       padding: 0 10px;
       margin: 0 auto;
-      width: 100%;
     }
   }
 

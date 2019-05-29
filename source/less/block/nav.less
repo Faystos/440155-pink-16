@@ -54,6 +54,7 @@
     display: none;
   }
 }
+
 @media (max-width: 959px) {
   .nav {
     &--closed {
@@ -76,15 +77,15 @@
 
     .nav--opened & {
       width: 24px;
-      height: 23px;      
+      height: 23px;
     }
 
     .nav--closed & {
       width: 50px;
       height: 24px;
     }
-
     &--closed {
+
       .nav--opened & {
         display: none;
       }
@@ -148,6 +149,7 @@
 .nav__wrap {
   padding: 0 20px;
 }
+
 @media (min-width: 660px) {
   .nav {
     margin: 0 0 -110px;
@@ -167,13 +169,9 @@
   }
 
   .nav__button {
-    //margin: 20px 0 0 225px;
-    & {
-      fill: #d22856;
-    }
+    fill: #d22856;
 
     &:active {
-      fill: #d22856;
       opacity: 0.3;
     }
 
@@ -210,6 +208,7 @@
     display: none;
   }
 }
+
 @media (min-width: 960px) {
   .nav {
     background: rgba(0, 0, 0, 0.3);

@@ -2,6 +2,10 @@
   background-color: #f2f2f2;
   margin: 0 0 41px;
 
+  & legend {
+    margin-bottom: 20px;
+  }
+
   &--progress {
     & legend {
       text-align: center;
@@ -12,7 +16,8 @@
   &--system {
     & legend {
       text-align: center;
-      margin: 0 auto;
+      margin: 0 auto 40px;
+      max-width: 230px;
     }
   }
 }
@@ -78,7 +83,9 @@
 
 .form-chek__box,
 .form-chek__box-radio {
-  display: none;
+  //display: none;
+  appearance: none;
+  position: absolute;
 }
 
 .form-chek__chek::before {
@@ -97,6 +104,10 @@
   border: solid 2px #283645;
 }
 
+.form-chek__box:focus + .form-chek__chek::before {
+  border: solid 2px #283645;
+}
+
 .form-chek__chek:active::before {
   border: solid 2px #d22856;
 }
@@ -105,6 +116,7 @@
   content: "";
   position: absolute;
   background: url("../img/icon/icon-yes.svg") no-repeat 50% 50%;
+  background-color: #ffffff;
 }
 
 .form-chek__chek-radio::before {
@@ -121,6 +133,10 @@
 }
 
 .form-chek__chek-radio:hover::before {
+  border: solid 2px #283645;
+}
+
+.form-chek__box-radio:focus + .form-chek__chek-radio::before {
   border: solid 2px #283645;
 }
 
@@ -167,6 +183,7 @@
       & legend {
         margin: 0 auto;
         text-align: center;
+        max-width: 100%;
       }
     }
 
@@ -177,6 +194,7 @@
       & legend {
         margin: 0 auto 18px;
         text-align: center;
+        max-width: 100%;
       }
     }
   }
@@ -220,7 +238,6 @@
 
   .form-chek__chek-radio {
     margin: 0 0 32px 20px;
-    margin-bottom: 39px;
 
     &::before {
       left: -21px;
